@@ -28,7 +28,9 @@ strArr = [first,second,third]
 for i in strArr:
     print("입력한 문자열 : ",i)
 
-#배열
+#배열2
+
 print("문자열 입력")
 strArr = map(str, input().split(","))
 print(*strArr)
+

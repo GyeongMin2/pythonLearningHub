@@ -1,13 +1,15 @@
-# if 다시 연습 — 점수랑 기준만 살짝 바꿈
-score = 72
-if score >= 90:
-    grade = 'A'
-elif score >= 80:
-    grade = 'B'
-elif score >= 70:
-    grade = 'C'
-elif score >= 60:
-    grade = 'D'
+# 어제꺼랑 비슷한데 변수명이랑 출력만 바꿈
+point = 91
+if point >= 90:
+    result = 'A'
+elif point >= 80:
+    result = 'B'
+elif point >= 70:
+    result = 'C'
+elif point >= 60:
+    result = 'D'
 else:
-    grade = 'F'
-print('이번 점수 등급:', grade)
+    result = 'F'
+print(f'{point}점이면 {result}')
+if point >= 90:
+    print('잘했어!')

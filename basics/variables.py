@@ -1,8 +1,11 @@
-# 변수 다시 연습 — 값만 바꿈
+# 어제꺼랑 비슷한데 출력만 바꿈
 x = 20
 y = 2.5
 msg = 'hi'
-ok = False
-print(x, y, msg, ok)
-print('곱:', x * int(y))
+ok = True
+print('값들:', x, y, msg, ok)
+print('합계 =', x + int(y))
 print(type(x), type(y))
+# 교환도 한 번 더
+x, y = y, x
+print('swap 후', x, y)

@@ -1,7 +1,8 @@
-# 변수와 기본 연산
-a = 10
-b = 3.5
-c = 'hello'
-d = True
-print(a, b, c, d)
-print('합:', a + int(b))
+# 변수 다시 연습 — 값만 바꿈
+x = 20
+y = 2.5
+msg = 'hi'
+ok = False
+print(x, y, msg, ok)
+print('곱:', x * int(y))
+print(type(x), type(y))

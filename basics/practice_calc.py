@@ -1,3 +1,13 @@
-# 간단 계산기
-a, b = 10, 3
-print('+, -, *, /', a + b, a - b, a * b, a / b)
+# 계산기 다시 연습 — 숫자랑 연산만 바꿈
+a, b = 15, 4
+op = '*'
+if op == '+':
+    print(a + b)
+elif op == '-':
+    print(a - b)
+elif op == '*':
+    print(a * b)
+elif op == '/':
+    print(a / b)
+else:
+    print('모르는 연산')

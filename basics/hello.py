@@ -1,5 +1,5 @@
-# 파이썬 첫 출력 — 6개월 공부 시작
-name = '학생'
-goal = '기초부터 차근차근'
-print('Hello', name)
-print('목표:', goal)
+# 첫 출력 다시 연습 — 변수명이랑 문구만 바꿈
+user = '민수'
+goal = '매일 조금이라도'
+print('안녕', user)
+print('오늘 목표:', goal)

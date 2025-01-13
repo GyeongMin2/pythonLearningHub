@@ -1,6 +1,8 @@
-# 문자열 다시 연습 — 샘플 문장만 바꿈
+# 문자열 또 연습 — split/join만 살짝
 s = '  Hello Python  '
 print(s.strip())
 print(s.lower(), s.upper())
 print(s.replace('Python', '파이썬'))
-print('길이', len(s.strip()))
+parts = 'a,b,c'.split(',')
+print('split', parts)
+print('join', '-'.join(parts))

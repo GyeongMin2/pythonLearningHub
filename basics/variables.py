@@ -1,4 +1,4 @@
-# 어제꺼랑 비슷한데 출력만 바꿈
+# 변수 복습 메모
 x = 20
 y = 2.5
 msg = 'hi'
@@ -9,3 +9,4 @@ print(type(x), type(y))
 # 교환도 한 번 더
 x, y = y, x
 print('swap 후', x, y)
+print('끝')

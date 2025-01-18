@@ -7,3 +7,8 @@ def greet(name='학생'):
     return f'안녕, {name}'
 
 print(add(2, 3), greet())
+
+def average(nums):
+    if not nums:
+        return 0
+    return sum(nums) / len(nums)

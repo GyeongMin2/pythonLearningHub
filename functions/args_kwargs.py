@@ -11,3 +11,8 @@ def profile(**info):
         print(k, v)
 
 profile(name='민수', age=21)
+
+def mix(a, b=0, *args, **kwargs):
+    print('a,b', a, b)
+    print('args', args)
+    print('kwargs', kwargs)

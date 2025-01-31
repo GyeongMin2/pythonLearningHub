@@ -9,3 +9,7 @@ class Animal:
 class Dog(Animal):
     def speak(self):
         return '멍멍'
+
+class Cat(Animal):
+    def speak(self):
+        return '야옹'

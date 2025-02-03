@@ -12,3 +12,8 @@ def average(nums):
     if not nums:
         return 0
     return sum(nums) / len(nums)
+
+def describe(func_name):
+    print('호출:', func_name)
+
+describe('average')

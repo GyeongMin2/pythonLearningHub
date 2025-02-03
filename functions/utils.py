@@ -5,3 +5,8 @@ def is_even(n: int) -> bool:
 
 def clamp(n, lo, hi):
     return max(lo, min(hi, n))
+
+def average(nums):
+    if not nums:
+        raise ValueError('빈 리스트')
+    return sum(nums) / len(nums)

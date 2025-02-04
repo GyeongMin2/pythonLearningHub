@@ -11,3 +11,6 @@ class Student:
         if not self.scores:
             return 0
         return sum(self.scores) / len(self.scores)
+
+    def __str__(self):
+        return f'{self.name}({self.student_id})'

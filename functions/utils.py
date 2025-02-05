@@ -10,3 +10,10 @@ def average(nums):
     if not nums:
         raise ValueError('빈 리스트')
     return sum(nums) / len(nums)
+
+def unique(seq):
+    seen = []
+    for x in seq:
+        if x not in seen:
+            seen.append(x)
+    return seen

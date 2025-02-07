@@ -14,3 +14,6 @@ class Library:
 
     def add_book(self, book: Book):
         self.books.append(book)
+
+    def find(self, keyword):
+        return [b for b in self.books if keyword in b.title]

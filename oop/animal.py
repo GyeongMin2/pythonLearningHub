@@ -13,3 +13,10 @@ class Dog(Animal):
 class Cat(Animal):
     def speak(self):
         return '야옹'
+
+def introduce(pet: Animal):
+    print(pet.name, pet.speak())
+
+if __name__ == '__main__':
+    introduce(Dog('바둑'))
+    introduce(Cat('나비'))

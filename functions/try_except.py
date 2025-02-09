@@ -17,3 +17,9 @@ def read_number():
 
 class InputError(Exception):
     pass
+
+def divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        raise InputError('0으로 나눔') from None

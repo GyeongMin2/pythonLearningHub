@@ -14,3 +14,6 @@ def read_number():
         val = parse_int(raw)
         if val is not None:
             return val
+
+class InputError(Exception):
+    pass

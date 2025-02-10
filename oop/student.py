@@ -14,3 +14,12 @@ class Student:
 
     def __str__(self):
         return f'{self.name}({self.student_id})'
+
+    @property
+    def grade(self):
+        avg = self.average()
+        if avg >= 90:
+            return 'A'
+        if avg >= 80:
+            return 'B'
+        return 'C'

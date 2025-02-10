@@ -12,3 +12,6 @@ class BankAccount:
         if amount > self.balance:
             raise ValueError('잔액 부족')
         self.balance -= amount
+
+    def __str__(self):
+        return f'{self.owner} 잔액 {self.balance:,}원'

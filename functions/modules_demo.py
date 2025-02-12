@@ -4,3 +4,6 @@ from datetime import date
 
 print('pi', round(math.pi, 4))
 print('오늘', date.today())
+
+import random
+print('주사위', random.randint(1, 6))

@@ -15,3 +15,13 @@ class BankAccount:
 
     def __str__(self):
         return f'{self.owner} 잔액 {self.balance:,}원'
+
+class SavingsAccount(BankAccount):
+    def __init__(self, owner, balance=0, rate=0.02):
+        super().__init__(owner, balance)
+        self.rate = rate
+
+    def add_interest(self):
+        interest = int(self.balance * self.rate)
+        self.deposit(interest)
+        return interest

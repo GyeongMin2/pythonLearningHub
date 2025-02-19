@@ -11,3 +11,6 @@ print('주사위', random.randint(1, 6))
 from pathlib import Path
 here = Path(__file__).resolve().parent
 print('경로', here)
+
+def circle_area(r):
+    return math.pi * r * r

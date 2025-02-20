@@ -17,3 +17,10 @@ class Library:
 
     def find(self, keyword):
         return [b for b in self.books if keyword in b.title]
+
+    def borrow(self, title):
+        for b in self.books:
+            if b.title == title and not b.is_borrowed:
+                b.is_borrowed = True
+                return True
+        return False

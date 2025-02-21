@@ -17,3 +17,9 @@ def describe(func_name):
     print('호출:', func_name)
 
 describe('average')
+
+def safe_div(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return None

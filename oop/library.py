@@ -24,3 +24,10 @@ class Library:
                 b.is_borrowed = True
                 return True
         return False
+
+    def return_book(self, title):
+        for b in self.books:
+            if b.title == title:
+                b.is_borrowed = False
+                return True
+        return False

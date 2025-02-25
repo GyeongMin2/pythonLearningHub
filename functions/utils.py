@@ -17,3 +17,10 @@ def unique(seq):
         if x not in seen:
             seen.append(x)
     return seen
+
+def read_lines(path):
+    try:
+        with open(path, encoding='utf-8') as f:
+            return f.read().splitlines()
+    except FileNotFoundError:
+        return []

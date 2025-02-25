@@ -18,3 +18,10 @@ def fib(n, memo=None):
     return memo[n]
 
 print('fib 10', fib(10))
+
+def countdown(n):
+    if n <= 0:
+        print('끝')
+        return
+    print(n)
+    countdown(n - 1)

@@ -14,3 +14,7 @@ print('경로', here)
 
 def circle_area(r):
     return math.pi * r * r
+
+import json
+sample = {'topic': 'modules', 'ok': True}
+print(json.dumps(sample, ensure_ascii=False))

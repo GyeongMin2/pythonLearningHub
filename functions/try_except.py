@@ -30,3 +30,6 @@ def run_safe(fn, *args):
     except Exception as err:
         print('실패', err)
         return None
+
+if __name__ == '__main__':
+    print(run_safe(divide, 10, 2))

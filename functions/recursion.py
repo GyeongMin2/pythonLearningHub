@@ -25,3 +25,6 @@ def countdown(n):
         return
     print(n)
     countdown(n - 1)
+
+if __name__ == '__main__':
+    print('fact', factorial(6))

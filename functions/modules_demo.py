@@ -18,3 +18,6 @@ def circle_area(r):
 import json
 sample = {'topic': 'modules', 'ok': True}
 print(json.dumps(sample, ensure_ascii=False))
+
+def demo():
+    print('demo', circle_area(3))

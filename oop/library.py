@@ -31,3 +31,11 @@ class Library:
                 b.is_borrowed = False
                 return True
         return False
+
+if __name__ == '__main__':
+    lib = Library()
+    lib.add_book(Book('파이썬 입문', '홍길동'))
+    lib.add_book(Book('데이터 분석', '이몽룡'))
+    print(lib.borrow('파이썬 입문'))
+    for b in lib.books:
+        print(b)

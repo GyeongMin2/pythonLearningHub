@@ -25,3 +25,7 @@ class SavingsAccount(BankAccount):
         interest = int(self.balance * self.rate)
         self.deposit(interest)
         return interest
+
+def transfer(src: BankAccount, dst: BankAccount, amount):
+    src.withdraw(amount)
+    dst.deposit(amount)

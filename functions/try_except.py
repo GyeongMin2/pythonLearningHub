@@ -33,3 +33,10 @@ def run_safe(fn, *args):
 
 if __name__ == '__main__':
     print(run_safe(divide, 10, 2))
+
+# finally 예제
+def demo_finally():
+    try:
+        print('work')
+    finally:
+        print('cleanup')

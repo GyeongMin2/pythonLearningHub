@@ -20,3 +20,6 @@ def mix(a, b=0, *args, **kwargs):
 def total_price(base, *extras, discount=0):
     s = base + sum(extras)
     return s - discount
+
+if __name__ == '__main__':
+    print(total_price(1000, 200, 300, discount=100))

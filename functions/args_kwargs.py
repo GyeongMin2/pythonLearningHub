@@ -23,3 +23,7 @@ def total_price(base, *extras, discount=0):
 
 if __name__ == '__main__':
     print(total_price(1000, 200, 300, discount=100))
+
+# 복습: 가변 인자 정리
+def log_call(fn_name, *a, **kw):
+    print(fn_name, a, kw)

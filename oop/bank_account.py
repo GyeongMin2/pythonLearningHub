@@ -1,3 +1,4 @@
+"""간단한 은행 계좌 예제 (상속 포함)"""
 class BankAccount:
     def __init__(self, owner, balance=0):
         self.owner = owner

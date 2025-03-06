@@ -23,3 +23,7 @@ def safe_div(a, b):
         return a / b
     except ZeroDivisionError:
         return None
+
+if __name__ == '__main__':
+    print('평균', average([1, 2, 3, 4]))
+    print('나눗셈', safe_div(10, 0))

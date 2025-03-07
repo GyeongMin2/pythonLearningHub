@@ -27,3 +27,8 @@ def read_lines(path):
 
 def slugify(text: str) -> str:
     return text.strip().lower().replace(' ', '-')
+
+if __name__ == '__main__':
+    print(average([1, 2, 3]))
+    print(unique([1, 1, 2, 3, 2]))
+    # 복습 메모 rev 6

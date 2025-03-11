@@ -34,3 +34,5 @@ if __name__ == '__main__':
     s.add_score(92)
     print(s, s.average(), s.grade)
     print('copy', s.copy_scores())
+
+# 메모: 점수 평균 반올림은 나중에

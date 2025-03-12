@@ -30,3 +30,27 @@ class SavingsAccount(BankAccount):
 def transfer(src: BankAccount, dst: BankAccount, amount):
     src.withdraw(amount)
     dst.deposit(amount)
+
+class CheckingAccount(BankAccount):
+    def __init__(self, owner, balance=0, fee=100):
+        super().__init__(owner, balance)
+        self.fee = fee
+
+    def withdraw(self, amount):
+        super().withdraw(amount + self.fee)
+        return amount
+
+def print_history(accounts):
+    for acc in accounts:
+        print('-', acc)
+
+if __name__ == '__main__':
+    acc = SavingsAccount('김학생', 10000)
+    acc.deposit(5000)
+    chk = CheckingAccount('김학생', 3000)
+    try:
+        transfer(acc, chk, 2000)
+    except ValueError as err:
+        print('이체 실패', err)
+    print_history([acc, chk])
+    print('이자', acc.add_interest())

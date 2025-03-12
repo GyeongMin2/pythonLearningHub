@@ -21,3 +21,7 @@ print(json.dumps(sample, ensure_ascii=False))
 
 def demo():
     print('demo', circle_area(3))
+
+if __name__ == '__main__':
+    demo()
+    # 가독성 개선 메모

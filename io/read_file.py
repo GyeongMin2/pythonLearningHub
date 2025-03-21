@@ -9,3 +9,7 @@ def read_text(path: str) -> str:
 
 if __name__ == '__main__':
     print(read_text('io/memo.txt')[:80])
+
+def read_lines(path: str):
+    text = read_text(path)
+    return text.splitlines() if text else []

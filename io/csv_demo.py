@@ -1,0 +1,16 @@
+import csv
+from pathlib import Path
+
+CSV_PATH = Path('io/scores.csv')
+
+def read_scores():
+    if not CSV_PATH.exists():
+        return []
+    with CSV_PATH.open(encoding='utf-8') as f:
+        return list(csv.DictReader(f))
+
+def average_score(rows):
+    if not rows:
+        return 0
+    total = sum(int(r['score']) for r in rows)
+    return total / len(rows)

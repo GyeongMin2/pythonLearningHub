@@ -13,3 +13,7 @@ def monthly_mean(df):
     if 'month' not in df.columns:
         return df
     return df.groupby('month')['temp'].mean()
+
+def save_summary(path: str):
+    df = summarize()
+    monthly_mean(df).to_csv(path, encoding='utf-8')

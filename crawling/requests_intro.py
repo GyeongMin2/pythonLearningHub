@@ -12,3 +12,7 @@ def fetch(url: str, timeout=10):
     except requests.RequestException as err:
         print('요청 실패', err)
         return ''
+
+if __name__ == '__main__':
+    html = fetch('https://example.com')
+    print('len', len(html))

@@ -1,0 +1,25 @@
+import csv
+from pathlib import Path
+import requests
+from bs4 import BeautifulSoup
+
+from crawling.requests_intro import HEADERS
+
+OUT = Path('crawling/titles.csv')
+URL = 'https://example.com/'
+
+def fetch_html():
+    try:
+        r = requests.get(URL, headers=HEADERS, timeout=10)
+        r.raise_for_status()
+        return r.text
+    except requests.RequestException as err:
+        print('크롤링 실패', err)
+        return ''
+
+def extract_titles(html: str):
+    soup = BeautifulSoup(html, 'html.parser')
+    titles = [h.get_text(strip=True) for h in soup.find_all('h1')]
+    if not titles:
+        titles = ['(샘플) Example Domain']
+    return titles

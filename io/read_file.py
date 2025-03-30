@@ -13,3 +13,10 @@ if __name__ == '__main__':
 def read_lines(path: str):
     text = read_text(path)
     return text.splitlines() if text else []
+
+def safe_read(path: str, default=''):
+    try:
+        return read_text(path)
+    except OSError as err:
+        print('읽기 실패', err)
+        return default

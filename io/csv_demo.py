@@ -14,3 +14,11 @@ def average_score(rows):
         return 0
     total = sum(int(r['score']) for r in rows)
     return total / len(rows)
+
+def append_score(name, score):
+    new_file = not CSV_PATH.exists()
+    with CSV_PATH.open('a', newline='', encoding='utf-8') as f:
+        w = csv.writer(f)
+        if new_file:
+            w.writerow(['name', 'score'])
+        w.writerow([name, score])

@@ -23,3 +23,11 @@ def extract_titles(html: str):
     if not titles:
         titles = ['(샘플) Example Domain']
     return titles
+
+def save_csv(titles):
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    with OUT.open('w', newline='', encoding='utf-8') as f:
+        w = csv.writer(f)
+        w.writerow(['title'])
+        for t in titles:
+            w.writerow([t])

@@ -22,3 +22,7 @@ def append_score(name, score):
         if new_file:
             w.writerow(['name', 'score'])
         w.writerow([name, score])
+
+if __name__ == '__main__':
+    rows = read_scores()
+    print('평균', average_score(rows))

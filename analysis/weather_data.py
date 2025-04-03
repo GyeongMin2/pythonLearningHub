@@ -17,3 +17,6 @@ def monthly_mean(df):
 def save_summary(path: str):
     df = summarize()
     monthly_mean(df).to_csv(path, encoding='utf-8')
+
+if __name__ == '__main__':
+    summarize()

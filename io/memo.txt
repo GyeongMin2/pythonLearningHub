@@ -3,3 +3,4 @@
 - encoding utf-8
 2025-03-21 csv 한 줄 추가 연습
 2025-04-03 BeautifulSoup 셀렉터 메모
+2025-04-25 pandas 필터 복습

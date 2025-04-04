@@ -31,3 +31,9 @@ def save_csv(titles):
         w.writerow(['title'])
         for t in titles:
             w.writerow([t])
+
+def run():
+    html = fetch_html()
+    titles = extract_titles(html)
+    save_csv(titles)
+    print('saved', len(titles))

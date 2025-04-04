@@ -15,3 +15,6 @@ def main():
         return
     print(df.head())
     print('평균 기온', df['temp'].mean())
+
+    rainy = df[df['rain'] > 0]
+    print('비 온 날', len(rainy))

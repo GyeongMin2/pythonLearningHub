@@ -18,3 +18,6 @@ def main():
 
     rainy = df[df['rain'] > 0]
     print('비 온 날', len(rainy))
+
+    by_city = df.groupby('city')['temp'].mean()
+    print(by_city)

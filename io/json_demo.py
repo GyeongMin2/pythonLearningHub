@@ -13,3 +13,8 @@ def save_profile(data):
         json.dumps(data, ensure_ascii=False, indent=2),
         encoding='utf-8',
     )
+
+def update_field(key, value):
+    data = load_profile()
+    data[key] = value
+    save_profile(data)

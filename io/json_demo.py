@@ -18,3 +18,7 @@ def update_field(key, value):
     data = load_profile()
     data[key] = value
     save_profile(data)
+
+if __name__ == '__main__':
+    update_field('last_study', 'json')
+    print(load_profile())

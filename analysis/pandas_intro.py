@@ -21,3 +21,6 @@ def main():
 
     by_city = df.groupby('city')['temp'].mean()
     print(by_city)
+
+if __name__ == '__main__':
+    main()

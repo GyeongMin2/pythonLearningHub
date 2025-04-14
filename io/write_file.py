@@ -9,3 +9,6 @@ def append_line(path: str, line: str):
 
 def write_text(path: str, content: str):
     Path(path).write_text(content, encoding='utf-8')
+
+def log_memo(text: str):
+    append_line('io/memo.txt', text)

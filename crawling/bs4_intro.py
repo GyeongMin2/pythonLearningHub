@@ -10,3 +10,7 @@ def parse_titles(html: str):
 
 if __name__ == '__main__':
     print(parse_titles(SAMPLE))
+
+def parse_headings(html: str):
+    soup = BeautifulSoup(html, 'html.parser')
+    return [h.get_text(strip=True) for h in soup.find_all('h1')]

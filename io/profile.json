@@ -5,5 +5,10 @@
     "coding",
     "walking"
   ],
-  "last_study": "json"
+  "last_study": "json",
+  "courses": [
+    "basics",
+    "functions",
+    "oop"
+  ]
 }

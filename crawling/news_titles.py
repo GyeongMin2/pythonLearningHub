@@ -37,3 +37,6 @@ def run():
     titles = extract_titles(html)
     save_csv(titles)
     print('saved', len(titles))
+
+if __name__ == '__main__':
+    run()

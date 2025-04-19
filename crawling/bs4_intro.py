@@ -14,3 +14,10 @@ if __name__ == '__main__':
 def parse_headings(html: str):
     soup = BeautifulSoup(html, 'html.parser')
     return [h.get_text(strip=True) for h in soup.find_all('h1')]
+
+def safe_parse(html: str):
+    try:
+        return parse_titles(html)
+    except Exception as err:
+        print('파싱 오류', err)
+        return []

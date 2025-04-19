@@ -20,3 +20,6 @@ def save_summary(path: str):
 
 if __name__ == '__main__':
     summarize()
+
+def rainy_days(df):
+    return df[df['rain'] > 0.0]

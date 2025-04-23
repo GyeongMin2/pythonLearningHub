@@ -40,3 +40,9 @@ def run():
 
 if __name__ == '__main__':
     run()
+
+def load_saved():
+    if not OUT.exists():
+        return []
+    with OUT.open(encoding='utf-8') as f:
+        return list(csv.DictReader(f))

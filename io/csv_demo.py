@@ -26,3 +26,8 @@ def append_score(name, score):
 if __name__ == '__main__':
     rows = read_scores()
     print('평균', average_score(rows))
+
+def top_student(rows):
+    if not rows:
+        return None
+    return max(rows, key=lambda r: int(r['score']))

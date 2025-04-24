@@ -46,3 +46,8 @@ def load_saved():
         return []
     with OUT.open(encoding='utf-8') as f:
         return list(csv.DictReader(f))
+
+# 셀렉터 수정 메모 — h1 말고 a 태그도 시도
+def extract_links(html: str):
+    soup = BeautifulSoup(html, 'html.parser')
+    return [a.get('href') for a in soup.find_all('a')[:5]]

@@ -23,3 +23,6 @@ if __name__ == '__main__':
 
 def rainy_days(df):
     return df[df['rain'] > 0.0]
+
+def city_stats(df):
+    return df.groupby('city').agg({'temp': 'mean', 'rain': 'sum'})

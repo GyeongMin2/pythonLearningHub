@@ -21,3 +21,7 @@ def safe_parse(html: str):
     except Exception as err:
         print('파싱 오류', err)
         return []
+
+# json 저장 연습과 연계
+def to_rows(titles):
+    return [{'title': t} for t in titles]

@@ -24,3 +24,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# plot 은 나중에 (matplotlib)
+# import matplotlib.pyplot as plt
+# df['temp'].plot(kind='line')

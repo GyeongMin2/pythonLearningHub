@@ -12,3 +12,6 @@ def write_text(path: str, content: str):
 
 def log_memo(text: str):
     append_line('io/memo.txt', text)
+
+if __name__ == '__main__':
+    log_memo('오늘 공부: with 문')

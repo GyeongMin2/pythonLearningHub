@@ -26,3 +26,8 @@ def rainy_days(df):
 
 def city_stats(df):
     return df.groupby('city').agg({'temp': 'mean', 'rain': 'sum'})
+
+# 리팩터: 함수 이름 정리
+def run():
+    df = summarize()
+    print(city_stats(df))

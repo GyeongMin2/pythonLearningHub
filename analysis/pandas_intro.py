@@ -28,3 +28,6 @@ if __name__ == '__main__':
 # plot 은 나중에 (matplotlib)
 # import matplotlib.pyplot as plt
 # df['temp'].plot(kind='line')
+
+def filter_hot(df, threshold=28):
+    return df[df['temp'] >= threshold]

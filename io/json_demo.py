@@ -22,3 +22,10 @@ def update_field(key, value):
 if __name__ == '__main__':
     update_field('last_study', 'json')
     print(load_profile())
+
+def ensure_defaults():
+    data = load_profile()
+    data.setdefault('hobbies', [])
+    data.setdefault('level', 'beginner')
+    save_profile(data)
+    return data

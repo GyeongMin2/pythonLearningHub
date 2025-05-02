@@ -16,3 +16,8 @@ def fetch(url: str, timeout=10):
 if __name__ == '__main__':
     html = fetch('https://example.com')
     print('len', len(html))
+
+def fetch_bytes(url: str):
+    resp = requests.get(url, headers=HEADERS, timeout=10)
+    resp.raise_for_status()
+    return resp.content

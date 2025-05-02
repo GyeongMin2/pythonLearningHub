@@ -29,3 +29,7 @@ def ensure_defaults():
     data.setdefault('level', 'beginner')
     save_profile(data)
     return data
+
+# 크롤링 결과 저장 연습용
+def export_copy(path: str):
+    Path(path).write_text(json.dumps(load_profile(), ensure_ascii=False, indent=2), encoding='utf-8')

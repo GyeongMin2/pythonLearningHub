@@ -15,3 +15,6 @@ def log_memo(text: str):
 
 if __name__ == '__main__':
     log_memo('오늘 공부: with 문')
+
+# pathlib 로 경로 통일 연습
+BASE = Path('io')

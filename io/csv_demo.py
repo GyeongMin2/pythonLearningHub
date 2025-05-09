@@ -31,3 +31,6 @@ def top_student(rows):
     if not rows:
         return None
     return max(rows, key=lambda r: int(r['score']))
+
+    # encoding utf-8 명시 복습
+    print('1등', top_student(rows))

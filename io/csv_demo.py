@@ -34,3 +34,6 @@ def top_student(rows):
 
     # encoding utf-8 명시 복습
     print('1등', top_student(rows))
+
+def filter_by_min(rows, minimum):
+    return [r for r in rows if int(r['score']) >= minimum]

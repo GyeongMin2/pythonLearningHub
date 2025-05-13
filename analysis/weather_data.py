@@ -31,3 +31,6 @@ def city_stats(df):
 def run():
     df = summarize()
     print(city_stats(df))
+
+if __name__ == '__main__':
+    run()

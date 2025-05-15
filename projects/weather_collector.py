@@ -26,3 +26,10 @@ def init_log():
     LOG.parent.mkdir(parents=True, exist_ok=True)
     with LOG.open('w', newline='', encoding='utf-8') as f:
         csv.writer(f).writerow(['date', 'city', 'temp', 'rain', 'source'])
+
+def append_row(city, temp, rain=0.0, source='manual'):
+    init_log()
+    day = datetime.now().strftime('%Y-%m-%d')
+    with LOG.open('a', newline='', encoding='utf-8') as f:
+        csv.writer(f).writerow([day, city, temp, rain, source])
+    logger.info('saved %s %s', city, temp)

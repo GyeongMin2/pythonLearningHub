@@ -7,3 +7,5 @@
 ## weather_collector
 - CSV 로그
 - API placeholder
+
+- logging 추가

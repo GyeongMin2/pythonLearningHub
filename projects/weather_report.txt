@@ -1,0 +1,2 @@
+=== weather report ===
+2025-05-20 Seoul 21.0C rain=0.0

@@ -15,3 +15,10 @@ def add_task(title):
     items = load()
     items.append({'title': title, 'done': False})
     save(items)
+
+def toggle(title):
+    items = load()
+    for t in items:
+        if t['title'] == title:
+            t['done'] = not t['done']
+    save(items)

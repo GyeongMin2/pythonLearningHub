@@ -33,3 +33,9 @@ def append_row(city, temp, rain=0.0, source='manual'):
     with LOG.open('a', newline='', encoding='utf-8') as f:
         csv.writer(f).writerow([day, city, temp, rain, source])
     logger.info('saved %s %s', city, temp)
+
+def load_rows():
+    if not LOG.exists():
+        return []
+    with LOG.open(encoding='utf-8') as f:
+        return list(csv.DictReader(f))

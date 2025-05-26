@@ -8,5 +8,10 @@
     "name": "지영",
     "phone": "010-3333-4444",
     "email": ""
+  },
+  {
+    "name": "현우",
+    "phone": "010-5555-6666",
+    "email": "hyun@example.com"
   }
 ]

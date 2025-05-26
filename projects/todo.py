@@ -22,3 +22,8 @@ def toggle(title):
         if t['title'] == title:
             t['done'] = not t['done']
     save(items)
+
+def list_tasks():
+    for t in load():
+        mark = 'x' if t['done'] else ' '
+        print(f'[{mark}] {t["title"]}')

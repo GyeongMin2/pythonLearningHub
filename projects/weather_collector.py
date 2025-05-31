@@ -39,3 +39,13 @@ def load_rows():
         return []
     with LOG.open(encoding='utf-8') as f:
         return list(csv.DictReader(f))
+
+def summary():
+    rows = load_rows()
+    if not rows:
+        print('데이터 없음')
+        return
+    temps = [float(r['temp']) for r in rows]
+    rainy = [r for r in rows if float(r.get('rain', 0)) > 0]
+    print(f"{len(rows)}건, 평균기온 {sum(temps)/len(temps):.1f}")
+    print(f'비 온 기록 {len(rainy)}건')

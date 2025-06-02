@@ -27,3 +27,19 @@ def add_contact(name, phone, email=''):
             return
     contacts.append({'name': name, 'phone': phone, 'email': email})
     save(contacts)
+
+def find_contact(keyword):
+    keyword = keyword.strip().lower()
+    for c in load():
+        if keyword in c['name'].lower():
+            return c
+    return None
+
+def list_contacts():
+    contacts = load()
+    if not contacts:
+        print('연락처 없음')
+        return
+    for i, c in enumerate(contacts, 1):
+        email = c.get('email') or '-'
+        print(f"{i}. {c['name']} / {c['phone']} / {email}")

@@ -43,3 +43,12 @@ def list_contacts():
     for i, c in enumerate(contacts, 1):
         email = c.get('email') or '-'
         print(f"{i}. {c['name']} / {c['phone']} / {email}")
+
+def delete_contact(name):
+    contacts = load()
+    new_list = [c for c in contacts if c['name'] != name]
+    if len(new_list) == len(contacts):
+        print('없는 이름')
+        return False
+    save(new_list)
+    return True

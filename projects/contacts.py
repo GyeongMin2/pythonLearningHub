@@ -52,3 +52,7 @@ def delete_contact(name):
         return False
     save(new_list)
     return True
+
+def search_contacts(keyword):
+    keyword = keyword.strip().lower()
+    return [c for c in load() if keyword in c['name'].lower() or keyword in c['phone']]

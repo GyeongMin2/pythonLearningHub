@@ -49,3 +49,17 @@ def summary():
     rainy = [r for r in rows if float(r.get('rain', 0)) > 0]
     print(f"{len(rows)}건, 평균기온 {sum(temps)/len(temps):.1f}")
     print(f'비 온 기록 {len(rainy)}건')
+
+def fetch_api(city: str):
+    if requests is None:
+        logger.warning('requests 없음 — 더미 반환')
+        return {'city': city, 'temp': 20.0, 'rain': 0.0}
+    try:
+        # 실제 키 없어서 placeholder
+        resp = requests.get(API_URL, params={'city': city}, headers=HEADERS, timeout=8)
+        resp.raise_for_status()
+        data = resp.json()
+        return data
+    except Exception as err:
+        logger.error('API 실패 %s', err)
+        return {'city': city, 'temp': 18.0, 'rain': 0.0, 'source': 'fallback'}

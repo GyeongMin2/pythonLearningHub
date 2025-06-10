@@ -27,3 +27,7 @@ def list_tasks():
     for t in load():
         mark = 'x' if t['done'] else ' '
         print(f'[{mark}] {t["title"]}')
+
+if __name__ == '__main__':
+    add_task('pandas 복습')
+    list_tasks()

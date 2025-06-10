@@ -63,3 +63,15 @@ def fetch_api(city: str):
     except Exception as err:
         logger.error('API 실패 %s', err)
         return {'city': city, 'temp': 18.0, 'rain': 0.0, 'source': 'fallback'}
+
+def collect_city(city: str):
+    data = fetch_api(city)
+    temp = float(data.get('temp', 0))
+    rain = float(data.get('rain', 0))
+    source = data.get('source', 'api')
+    append_row(city, temp, rain, source)
+
+def scrape_stub(city: str):
+    # BeautifulSoup 으로 확장 예정
+    logger.info('scrape stub for %s', city)
+    append_row(city, 19.5, 0.0, 'scrape-stub')

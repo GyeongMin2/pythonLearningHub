@@ -75,3 +75,10 @@ def scrape_stub(city: str):
     # BeautifulSoup 으로 확장 예정
     logger.info('scrape stub for %s', city)
     append_row(city, 19.5, 0.0, 'scrape-stub')
+
+def write_report():
+    rows = load_rows()
+    lines_out = ['=== weather report ===']
+    for r in rows[-10:]:
+        lines_out.append(f"{r['date']} {r['city']} {r['temp']}C rain={r['rain']}")
+    REPORT.write_text('\n'.join(lines_out) + '\n', encoding='utf-8')

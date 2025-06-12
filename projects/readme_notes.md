@@ -9,3 +9,4 @@
 - API placeholder
 
 - logging 추가
+- todo.py 는 연습용

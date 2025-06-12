@@ -82,3 +82,6 @@ def write_report():
     for r in rows[-10:]:
         lines_out.append(f"{r['date']} {r['city']} {r['temp']}C rain={r['rain']}")
     REPORT.write_text('\n'.join(lines_out) + '\n', encoding='utf-8')
+
+def filter_by_city(city: str):
+    return [r for r in load_rows() if r['city'].lower() == city.lower()]

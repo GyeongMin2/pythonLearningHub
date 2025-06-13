@@ -31,3 +31,16 @@ def list_tasks():
 if __name__ == '__main__':
     add_task('pandas 복습')
     list_tasks()
+
+def menu():
+    while True:
+        print('1 add 2 toggle 3 list 0 quit')
+        c = input('> ').strip()
+        if c == '0':
+            break
+        if c == '1':
+            add_task(input('title: ').strip())
+        elif c == '2':
+            toggle(input('title: ').strip())
+        elif c == '3':
+            list_tasks()

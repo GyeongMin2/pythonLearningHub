@@ -85,3 +85,25 @@ def write_report():
 
 def filter_by_city(city: str):
     return [r for r in load_rows() if r['city'].lower() == city.lower()]
+
+def cli():
+    print('1 수동입력 2 API수집 3 요약 4 리포트 0 종료')
+    while True:
+        choice = input('> ').strip()
+        if choice == '0':
+            break
+        if choice == '1':
+            city = input('도시: ').strip() or 'Seoul'
+            temp = float(input('기온: ').strip() or '20')
+            rain = float(input('강수: ').strip() or '0')
+            append_row(city, temp, rain, 'manual')
+        elif choice == '2':
+            city = input('도시: ').strip() or 'Seoul'
+            collect_city(city)
+        elif choice == '3':
+            summary()
+        elif choice == '4':
+            write_report()
+            print('saved', REPORT)
+        else:
+            print('다시')

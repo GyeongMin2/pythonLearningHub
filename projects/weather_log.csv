@@ -3,3 +3,4 @@ date,city,temp,rain,source
 2025-05-21,Busan,23.5,0.0,manual
 2025-05-23,Seoul,19.0,3.0,manual
 2025-06-01,Seoul,25.0,0.0,api
+2025-06-10,Busan,26.2,0.0,api

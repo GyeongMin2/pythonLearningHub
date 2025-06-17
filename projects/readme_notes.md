@@ -10,3 +10,6 @@
 
 - logging 추가
 - todo.py 는 연습용
+
+## 다음
+- matplotlib 그래프 (시간되면)

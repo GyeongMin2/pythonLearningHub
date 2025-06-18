@@ -107,3 +107,7 @@ def cli():
             print('saved', REPORT)
         else:
             print('다시')
+
+def export_txt(path: str = 'projects/weather_export.txt'):
+    rows = load_rows()
+    Path(path).write_text('\n'.join(str(r) for r in rows), encoding='utf-8')

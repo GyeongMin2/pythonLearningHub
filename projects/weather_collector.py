@@ -111,3 +111,30 @@ def cli():
 def export_txt(path: str = 'projects/weather_export.txt'):
     rows = load_rows()
     Path(path).write_text('\n'.join(str(r) for r in rows), encoding='utf-8')
+
+def validate_row(row: dict) -> bool:
+    try:
+        float(row['temp'])
+        float(row.get('rain', 0))
+        return bool(row.get('city'))
+    except (KeyError, ValueError):
+        return False
+
+def clean_log():
+    rows = [r for r in load_rows() if validate_row(r)]
+    init_log()
+    with LOG.open('w', newline='', encoding='utf-8') as f:
+        w = csv.writer(f)
+        w.writerow(['date', 'city', 'temp', 'rain', 'source'])
+        for r in rows:
+            w.writerow([r['date'], r['city'], r['temp'], r['rain'], r.get('source', '')])
+    logger.info('cleaned %s rows', len(rows))
+
+if __name__ == '__main__':
+    # 테스트 데이터
+    if not LOG.exists():
+        append_row('Seoul', 22.0, 0.0, 'seed')
+        append_row('Busan', 24.5, 1.2, 'seed')
+    clean_log()
+    cli()
+    # rev 11/11 — 프로젝트 마무리

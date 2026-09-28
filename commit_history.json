@@ -1,0 +1,1422 @@
+[
+  {
+    "date": "2024-12-14T17:21:55",
+    "message": "파이썬 기초 공부 시작",
+    "files": {
+      "basics/hello.py": "print('Hello Python!')\n"
+    }
+  },
+  {
+    "date": "2024-12-15T00:31:17",
+    "message": "딕셔너리 예제 추가",
+    "files": {
+      "basics/variables.py": "# 변수 연습\na = 10\nb = 3.5\nc = 'hello'\nprint(a, b, c)\n"
+    }
+  },
+  {
+    "date": "2024-12-18T22:22:19",
+    "message": "문자열 메서드 정리",
+    "files": {
+      "basics/types.py": "# 자료형\nprint(type(10))\nprint(type(3.14))\nprint(type('문자'))\nprint(type([1,2,3]))\n"
+    }
+  },
+  {
+    "date": "2024-12-19T19:49:17",
+    "message": "간단한 계산기 만들어봄",
+    "files": {
+      "basics/if_else.py": "# if문\nscore = 80\nif score >= 60:\n    print('합격')\nelse:\n    print('불합격')\n"
+    }
+  },
+  {
+    "date": "2024-12-19T20:52:28",
+    "message": "숫자맞추기 게임 초안",
+    "files": {
+      "basics/loops.py": "# for 반복\nfor i in range(5):\n    print(i)\n"
+    }
+  },
+  {
+    "date": "2024-12-19T21:27:38",
+    "message": "반복문 처음 해봄",
+    "files": {
+      "basics/lists.py": "# 리스트\nnums = [3, 1, 4, 1, 5]\nprint(nums[0])\nprint(len(nums))\n"
+    }
+  },
+  {
+    "date": "2024-12-22T22:00:33",
+    "message": "오늘 기초문법 새로  orth",
+    "files": {
+      "basics/strings.py": "# 문자열\ns = 'Python'\nprint(s[0], s[-1])\nprint(s.lower(), s.upper())\n"
+    }
+  },
+  {
+    "date": "2024-12-22T22:46:19",
+    "message": "문자열 메서드 정리",
+    "files": {
+      "basics/dict.py": "# 딕셔너리\nstudent = {'name': '철수', 'age': 20}\nprint(student['name'])\n"
+    }
+  },
+  {
+    "date": "2024-12-24T01:10:08",
+    "message": "숫자맞추기 게임 초안",
+    "files": {
+      "basics/practice_calc.py": "# 간단한 계산기\na = 10\nb = 3\nprint(a + b)\nprint(a - b)\nprint(a * b)\nprint(a / b)\n"
+    }
+  },
+  {
+    "date": "2024-12-25T22:35:53",
+    "message": "오늘 기초문법 새로  orth",
+    "files": {
+      "basics/number_guess.py": "# 숫자 맞추기 (하드코딩)\nanswer = 7\nguess = 5\nif guess == answer:\n    print('정답')\nelse:\n    print('틀림')\n"
+    }
+  },
+  {
+    "date": "2024-12-25T23:21:15",
+    "message": "복습하면서 리팩터",
+    "files": {
+      "basics/dict.py": "# 딕셔너리 다루기\nstudent = {'name': '철수', 'age': 20, 'major': '컴공'}\nstudent['age'] = 21\nstudent['grade'] = 'A'\nfor k, v in student.items():\n    print(k, v)\n"
+    }
+  },
+  {
+    "date": "2024-12-26T01:24:05",
+    "message": "오타 고침",
+    "files": {
+      "basics/loops.py": "# for / while\nfor i in range(1, 6):\n    print('*' * i)\n\nn = 0\nwhile n < 3:\n    print('while', n)\n    n += 1\n"
+    }
+  },
+  {
+    "date": "2024-12-26T19:52:48",
+    "message": "버그 수정 (연산 부분)",
+    "files": {
+      "basics/if_else.py": "# if-elif-else\nscore = 85\nif score >= 90:\n    print('A')\nelif score >= 80:\n    print('B')\nelif score >= 70:\n    print('C')\nelse:\n    print('F')\n"
+    }
+  },
+  {
+    "date": "2024-12-27T09:01:02",
+    "message": "숫자맞추기 while로 변경",
+    "files": {
+      "basics/if_else.py": "# 성적 판정 (입력받음)\nscore = int(input('점수: '))\nif score >= 90:\n    grade = 'A'\nelif score >= 80:\n    grade = 'B'\nelif score >= 70:\n    grade = 'C'\nelif score >= 60:\n    grade = 'D'\nelse:\n    grade = 'F'\nprint(f'등급: {grade}')\n"
+    }
+  },
+  {
+    "date": "2024-12-27T10:19:11",
+    "message": "버그 수정 (연산 부분)",
+    "files": {
+      "basics/dict.py": "# 단어 빈도 (간단)\nwords = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']\nfreq = {}\nfor w in words:\n    if w in freq:\n        freq[w] += 1\n    else:\n        freq[w] = 1\nprint(freq)\n"
+    }
+  },
+  {
+    "date": "2024-12-29T19:57:48",
+    "message": "출력 포맷 수정",
+    "files": {
+      "basics/variables.py": "# 변수와 타입\na = 10\nb = 3.5\nc = 'hello'\nd = True\nprint(type(a), type(b), type(c), type(d))\nprint(a + int(b))\n"
+    }
+  },
+  {
+    "date": "2024-12-29T21:39:03",
+    "message": "복습하면서 리팩터",
+    "files": {
+      "basics/variables.py": "# 변수 교환, 연산\nx = 5\ny = 10\n# 임시 변수로 교환\ntemp = x\nx = y\ny = temp\nprint(x, y)\nprint(x + y, x * y)\n"
+    }
+  },
+  {
+    "date": "2024-12-30T22:16:48",
+    "message": "입력받도록 개선",
+    "files": {
+      "basics/loops.py": "# 구구단\nfor i in range(2, 10):\n    for j in range(1, 10):\n        print(f'{i}x{j}={i*j}', end='  ')\n    print()\n"
+    }
+  },
+  {
+    "date": "2024-12-30T23:17:38",
+    "message": "딕셔너리 버전 개선",
+    "files": {
+      "basics/strings.py": "# 문자열 메서드\ntext = '  hello world  '\nprint(text.strip())\nprint(text.replace('world', 'python'))\nprint('a,b,c'.split(','))\nprint('-'.join(['a', 'b', 'c']))\n"
+    }
+  },
+  {
+    "date": "2024-12-31T01:06:31",
+    "message": "주석 달아둠",
+    "files": {
+      "basics/loops.py": "# 합계와 break/continue\ntotal = 0\nfor i in range(1, 101):\n    if i % 2 == 0:\n        continue\n    total += i\n    if total > 500:\n        break\nprint('홀수 합 (제한):', total)\n"
+    }
+  },
+  {
+    "date": "2025-01-01T00:30:17",
+    "message": "계산기에 예외처리",
+    "files": {
+      "basics/dict.py": "# 단어 빈도 (개선)\nfrom collections import Counter\nwords = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']\nprint(Counter(words))\n"
+    }
+  },
+  {
+    "date": "2025-01-05T20:14:24",
+    "message": "버그 수정 (연산 부분)",
+    "files": {
+      "basics/practice_calc.py": "# 계산기 (입력)\na = float(input('첫번째 수: '))\nb = float(input('두번째 수: '))\nop = input('연산(+,-,*,/): ')\nif op == '+':\n    print(a + b)\nelif op == '-':\n    print(a - b)\nelif op == '*':\n    print(a * b)\nelif op == '/':\n    print(a / b)\nelse:\n    print('모르는 연산')\n"
+    }
+  },
+  {
+    "date": "2025-01-06T22:21:34",
+    "message": "좀 더 파이썬답게 수정",
+    "files": {
+      "basics/lists.py": "# 리스트 메서드\nnums = [3, 1, 4, 1, 5]\nnums.append(9)\nnums.sort()\nprint(nums)\nprint(nums.count(1))\n"
+    }
+  },
+  {
+    "date": "2025-01-06T23:30:44",
+    "message": "복습하면서 리팩터",
+    "files": {
+      "basics/hello.py": "# 파이썬 첫 출력\nprint('Hello Python!')\nprint('공부 시작!')\n"
+    }
+  },
+  {
+    "date": "2025-01-07T22:00:22",
+    "message": "좀 더 파이썬답게 수정",
+    "files": {
+      "basics/types.py": "# 형변환 연습\nn = '123'\nprint(int(n) + 7)\nprint(str(100) + '점')\nprint(float('3.14'))\n"
+    }
+  },
+  {
+    "date": "2025-01-09T10:34:47",
+    "message": "숫자맞추기 while로 변경",
+    "files": {
+      "basics/practice_calc.py": "# 계산기 (0으로 나누기 처리)\na = float(input('첫번째 수: '))\nb = float(input('두번째 수: '))\nop = input('연산(+,-,*,/): ')\nif op == '+':\n    print(a + b)\nelif op == '-':\n    print(a - b)\nelif op == '*':\n    print(a * b)\nelif op == '/':\n    if b == 0:\n        print('0으로 나눌 수 없음')\n    else:\n        print(a / b)\nelse:\n    print('모르는 연산')\n"
+    }
+  },
+  {
+    "date": "2025-01-11T10:14:17",
+    "message": "리스트 예제 보강",
+    "files": {
+      "basics/lists.py": "# 리스트 컴프리헨션 맛보기\nsquares = [i*i for i in range(1, 11)]\nevens = [i for i in range(20) if i % 2 == 0]\nprint(squares)\nprint(evens)\n"
+    }
+  },
+  {
+    "date": "2025-01-13T22:46:10",
+    "message": "숫자맞추기 while로 변경",
+    "files": {
+      "basics/strings.py": "# f-string과 포맷\nname = '민수'\nage = 20\nprint(f'{name}은 {age}살')\nprint('{:.2f}'.format(3.14159))\n"
+    }
+  },
+  {
+    "date": "2025-01-13T23:49:34",
+    "message": "반복문 break 추가",
+    "files": {
+      "basics/types.py": "# 자료형과 형변환\nnums = [1, 2, 3]\nprint(sum(nums))\nprint(list('abc'))\nprint(tuple([1, 2]))\nprint(set([1, 1, 2]))\n"
+    }
+  },
+  {
+    "date": "2025-01-14T22:01:39",
+    "message": "딕셔너리 버전 개선",
+    "files": {
+      "basics/hello.py": "# 인사 프로그램\nname = input('이름: ')\nprint(f'안녕, {name}!')\n"
+    }
+  },
+  {
+    "date": "2025-01-14T23:16:51",
+    "message": "주석 달아둠",
+    "files": {
+      "basics/variables.py": "# 변수 연습 (개선)\nx, y = 5, 10\nx, y = y, x  # 파이썬식 교환\nprint(f'x={x}, y={y}')\nprint(f'합={x+y}, 곱={x*y}')\n"
+    }
+  },
+  {
+    "date": "2025-01-14T23:53:43",
+    "message": "복습하면서 리팩터",
+    "files": {
+      "basics/hello.py": "# 파이썬 첫 출력\nname = '학생'\nprint('Hello', name)\nprint('파이썬 공부 중')\n"
+    }
+  },
+  {
+    "date": "2025-01-15T01:12:13",
+    "message": "oop 개념 정리용 파일",
+    "files": {
+      "functions/basic_func.py": "# 함수 첫 정의\ndef greet():\n    print('안녕')\n\ngreet()\n"
+    }
+  },
+  {
+    "date": "2025-01-15T01:55:50",
+    "message": "유틸 함수 모음 만듦",
+    "files": {
+      "functions/args_kwargs.py": "def intro(name, age):\n    print(name, age)\n\nintro('철수', 20)\n"
+    }
+  },
+  {
+    "date": "2025-01-18T20:04:37",
+    "message": "클래스에 __str__ 추가",
+    "files": {
+      "functions/basic_func.py": "def greet(name):\n    print('안녕,', name)\n\ndef add(a, b):\n    return a + b\n\ngreet('민수')\nprint(add(3, 5))\n"
+    }
+  },
+  {
+    "date": "2025-01-21T11:03:50",
+    "message": "프로퍼티로 바꿔봄",
+    "files": {
+      "functions/args_kwargs.py": "def intro(name, age, city='서울'):\n    print(f'{name}, {age}살, {city}')\n\nintro('철수', 20)\nintro('영희', 22, city='부산')\n"
+    }
+  },
+  {
+    "date": "2025-01-21T23:20:21",
+    "message": "유틸 함수 모음 만듦",
+    "files": {
+      "functions/lambda_map.py": "# lambda\nadd = lambda a, b: a + b\nprint(add(2, 3))\n"
+    }
+  },
+  {
+    "date": "2025-01-22T17:04:27",
+    "message": "계좌 클래스 만들어봄",
+    "files": {
+      "functions/recursion.py": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(factorial(5))\n"
+    }
+  },
+  {
+    "date": "2025-01-22T18:30:19",
+    "message": "모듈 import 연습",
+    "files": {
+      "oop/library.py": "class Book:\n    def __init__(self, title):\n        self.title = title\n        self.borrowed = False\n\nb = Book('파이썬 입문')\nprint(b.title, b.borrowed)\n"
+    }
+  },
+  {
+    "date": "2025-01-22T20:12:58",
+    "message": "클래스 첫 작성",
+    "files": {
+      "functions/modules_demo.py": "import math\nprint(math.sqrt(16))\nprint(math.pi)\n"
+    }
+  },
+  {
+    "date": "2025-01-24T21:21:17",
+    "message": "버그: 출금 조건 고침",
+    "files": {
+      "functions/lambda_map.py": "nums = [1, 2, 3, 4, 5]\nprint(list(map(lambda x: x * 2, nums)))\nprint(list(filter(lambda x: x % 2 == 0, nums)))\n"
+    }
+  },
+  {
+    "date": "2025-01-26T14:15:46",
+    "message": "프로퍼티로 바꿔봄",
+    "files": {
+      "functions/args_kwargs.py": "def intro(**kwargs):\n    for k, v in kwargs.items():\n        print(f'{k}: {v}')\n\nintro(name='철수', age=20, hobby='코딩')\n"
+    }
+  },
+  {
+    "date": "2025-01-28T00:57:50",
+    "message": "재귀 함수 도전",
+    "files": {
+      "functions/try_except.py": "n = int(input('숫자: '))\nprint(10 / n)\n"
+    }
+  },
+  {
+    "date": "2025-01-28T22:07:47",
+    "message": "메서드 하나 더 넣음",
+    "files": {
+      "functions/lambda_map.py": "nums = [1, 2, 3, 4, 5]\ndoubled = [x * 2 for x in nums]  # map 대신 컴프리헨션\nevens = [x for x in nums if x % 2 == 0]\nprint(doubled, evens)\n"
+    }
+  },
+  {
+    "date": "2025-01-28T23:11:30",
+    "message": "클래스 첫 작성",
+    "files": {
+      "oop/animal.py": "class Dog:\n    def speak(self):\n        print('멍멍')\n\nd = Dog()\nd.speak()\n"
+    }
+  },
+  {
+    "date": "2025-01-30T23:24:33",
+    "message": "잔액 검증 로직 수정",
+    "files": {
+      "functions/recursion.py": "def fib(n):\n    if n <= 1:\n        return n\n    return fib(n - 1) + fib(n - 2)\n\nfor i in range(10):\n    print(fib(i), end=' ')\nprint()\n"
+    }
+  },
+  {
+    "date": "2025-01-31T19:45:34",
+    "message": "모듈 import 연습",
+    "files": {
+      "functions/utils.py": "def is_even(n):\n    return n % 2 == 0\n\ndef clamp(n, lo, hi):\n    if n < lo:\n        return lo\n    if n > hi:\n        return hi\n    return n\n"
+    }
+  },
+  {
+    "date": "2025-01-31T21:17:40",
+    "message": "잔액 검증 로직 수정",
+    "files": {
+      "functions/try_except.py": "try:\n    n = int(input('숫자: '))\n    print(10 / n)\nexcept:\n    print('에러 발생')\n"
+    }
+  },
+  {
+    "date": "2025-01-31T21:56:05",
+    "message": "예외처리 세분화",
+    "files": {
+      "oop/animal.py": "class Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        print('...')\n\nclass Dog(Animal):\n    def speak(self):\n        print(self.name, ': 멍멍')\n\nclass Cat(Animal):\n    def speak(self):\n        print(self.name, ': 야옹')\n\nDog('초코').speak()\nCat('나비').speak()\n"
+    }
+  },
+  {
+    "date": "2025-02-02T10:05:15",
+    "message": "유틸 함수 모음 만듦",
+    "files": {
+      "oop/student.py": "# 클래스 첫 시도\nclass Student:\n    def __init__(self, name):\n        self.name = name\n\ns = Student('민수')\nprint(s.name)\n"
+    }
+  },
+  {
+    "date": "2025-02-02T22:19:55",
+    "message": "oop 개념 정리용 파일",
+    "files": {
+      "oop/bank_account.py": "class Account:\n    def __init__(self, balance):\n        self.balance = balance\n\n    def deposit(self, amount):\n        self.balance += amount\n\na = Account(1000)\na.deposit(500)\nprint(a.balance)\n"
+    }
+  },
+  {
+    "date": "2025-02-03T20:40:13",
+    "message": "예외처리 세분화",
+    "files": {
+      "functions/utils.py": "def is_even(n):\n    return n % 2 == 0\n\ndef clamp(n, lo, hi):\n    return max(lo, min(hi, n))\n\ndef average(nums):\n    if not nums:\n        return 0\n    return sum(nums) / len(nums)\n"
+    }
+  },
+  {
+    "date": "2025-02-03T23:02:10",
+    "message": "메서드 하나 더 넣음",
+    "files": {
+      "functions/basic_func.py": "def greet(name='친구'):\n    \"\"\"인사 함수\"\"\"\n    return f'안녕, {name}!'\n\ndef add(*args):\n    total = 0\n    for n in args:\n        total += n\n    return total\n\nprint(greet())\nprint(greet('지영'))\nprint(add(1, 2, 3, 4))\n"
+    }
+  },
+  {
+    "date": "2025-02-04T21:02:14",
+    "message": "주석 보강",
+    "files": {
+      "oop/student.py": "class Student:\n    def __init__(self, name, score):\n        self.name = name\n        self.score = score\n\n    def grade(self):\n        if self.score >= 90:\n            return 'A'\n        elif self.score >= 80:\n            return 'B'\n        else:\n            return 'C'\n\ns = Student('민수', 88)\nprint(s.name, s.grade())\n"
+    }
+  },
+  {
+    "date": "2025-02-05T20:59:16",
+    "message": "버그: 출금 조건 고침",
+    "files": {
+      "functions/utils.py": "\"\"\"자주 쓰는 유틸 함수\"\"\"\n\ndef is_even(n):\n    return n % 2 == 0\n\ndef clamp(n, lo, hi):\n    return max(lo, min(hi, n))\n\ndef average(nums):\n    if not nums:\n        raise ValueError('빈 리스트')\n    return sum(nums) / len(nums)\n\ndef unique(seq):\n    seen = []\n    for x in seq:\n        if x not in seen:\n            seen.append(x)\n    return seen\n"
+    }
+  },
+  {
+    "date": "2025-02-07T20:58:17",
+    "message": "함수에 기본인자 추가",
+    "files": {
+      "oop/library.py": "class Book:\n    def __init__(self, title, author):\n        self.title = title\n        self.author = author\n        self.borrowed = False\n\n    def borrow(self):\n        if self.borrowed:\n            print('이미 대출중')\n        else:\n            self.borrowed = True\n            print(self.title, '대출 완료')\n\n    def return_book(self):\n        self.borrowed = False\n        print(self.title, '반납 완료')\n\nb = Book('파이썬 입문', '홍길동')\nb.borrow()\nb.borrow()\nb.return_book()\n"
+    }
+  },
+  {
+    "date": "2025-02-07T21:38:47",
+    "message": "유틸 함수 추가",
+    "files": {
+      "oop/animal.py": "class Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        raise NotImplementedError\n\nclass Dog(Animal):\n    def speak(self):\n        return f'{self.name}: 멍멍'\n\nclass Cat(Animal):\n    def speak(self):\n        return f'{self.name}: 야옹'\n\nanimals = [Dog('초코'), Cat('나비'), Dog('바둑')]\nfor a in animals:\n    print(a.speak())\n"
+    }
+  },
+  {
+    "date": "2025-02-09T21:44:25",
+    "message": "유틸 함수 추가",
+    "files": {
+      "functions/try_except.py": "try:\n    n = int(input('숫자: '))\n    print(10 / n)\nexcept ValueError:\n    print('숫자가 아님')\nexcept ZeroDivisionError:\n    print('0으로 나눔')\nfinally:\n    print('끝')\n"
+    }
+  },
+  {
+    "date": "2025-02-09T22:56:03",
+    "message": "재귀에 메모이제이션",
+    "files": {
+      "functions/try_except.py": "def safe_div(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return None\n\nprint(safe_div(10, 2))\nprint(safe_div(10, 0))\n"
+    }
+  },
+  {
+    "date": "2025-02-10T14:48:43",
+    "message": "복습 커밋",
+    "files": {
+      "oop/student.py": "class Student:\n    count = 0\n\n    def __init__(self, name, score):\n        self.name = name\n        self.score = score\n        Student.count += 1\n\n    def grade(self):\n        if self.score >= 90:\n            return 'A'\n        elif self.score >= 80:\n            return 'B'\n        elif self.score >= 70:\n            return 'C'\n        else:\n            return 'F'\n\n    def __str__(self):\n        return f'{self.name}({self.grade()})'\n\ns1 = Student('민수', 88)\ns2 = Student('지영', 95)\nprint(s1, s2)\nprint('학생 수:', Student.count)\n"
+    }
+  },
+  {
+    "date": "2025-02-11T01:00:33",
+    "message": "클래스에 __str__ 추가",
+    "files": {
+      "oop/bank_account.py": "class Account:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance\n\n    def deposit(self, amount):\n        if amount <= 0:\n            print('금액 오류')\n            return\n        self.balance += amount\n\n    def withdraw(self, amount):\n        if amount > self.balance:\n            print('잔액 부족')\n            return\n        self.balance -= amount\n\na = Account('민수', 1000)\na.deposit(500)\na.withdraw(200)\nprint(a.owner, a.balance)\n"
+    }
+  },
+  {
+    "date": "2025-02-12T23:13:40",
+    "message": "유틸 함수 추가",
+    "files": {
+      "functions/modules_demo.py": "import math\nfrom random import randint, choice\n\nprint(math.ceil(3.2))\nprint(randint(1, 6))  # 주사위\nprint(choice(['가위', '바위', '보']))\n"
+    }
+  },
+  {
+    "date": "2025-02-12T23:57:34",
+    "message": "메서드 하나 더 넣음",
+    "files": {
+      "functions/recursion.py": "# 메모이제이션으로 fib 개선\nmemo = {0: 0, 1: 1}\n\ndef fib(n):\n    if n in memo:\n        return memo[n]\n    memo[n] = fib(n - 1) + fib(n - 2)\n    return memo[n]\n\nprint([fib(i) for i in range(15)])\n"
+    }
+  },
+  {
+    "date": "2025-02-14T22:52:48",
+    "message": "잔액 검증 로직 수정",
+    "files": {
+      "functions/modules_demo.py": "import datetime as dt\n\nnow = dt.datetime.now()\nprint(now.strftime('%Y-%m-%d %H:%M'))\ntomorrow = now + dt.timedelta(days=1)\nprint('내일:', tomorrow.date())\n"
+    }
+  },
+  {
+    "date": "2025-02-15T19:49:25",
+    "message": "버그: 출금 조건 고침",
+    "files": {
+      "oop/bank_account.py": "class Account:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self._balance = balance\n\n    @property\n    def balance(self):\n        return self._balance\n\n    def deposit(self, amount):\n        if amount <= 0:\n            raise ValueError('입금액은 양수')\n        self._balance += amount\n\n    def withdraw(self, amount):\n        if amount <= 0:\n            raise ValueError('출금액은 양수')\n        if amount > self._balance:\n            raise ValueError('잔액 부족')\n        self._balance -= amount\n\n    def __str__(self):\n        return f'{self.owner}: {self._balance}원'\n\ntry:\n    a = Account('민수', 1000)\n    a.deposit(500)\n    a.withdraw(200)\n    print(a)\nexcept ValueError as e:\n    print('오류:', e)\n"
+    }
+  },
+  {
+    "date": "2025-02-19T19:12:33",
+    "message": "유틸 함수 추가",
+    "files": {
+      "functions/try_except.py": "def safe_div(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return None\n\nprint(safe_div(10, 2))\nprint(safe_div(10, 0))\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-02-20T00:06:13",
+    "message": "클래스에 __str__ 추가",
+    "files": {
+      "functions/modules_demo.py": "import datetime as dt\n\nnow = dt.datetime.now()\nprint(now.strftime('%Y-%m-%d %H:%M'))\ntomorrow = now + dt.timedelta(days=1)\nprint('내일:', tomorrow.date())\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-02-20T22:07:01",
+    "message": "재귀에 메모이제이션",
+    "files": {
+      "oop/library.py": "class Book:\n    def __init__(self, title, author):\n        self.title = title\n        self.author = author\n        self.borrowed = False\n\n    def borrow(self):\n        if self.borrowed:\n            print('이미 대출중')\n        else:\n            self.borrowed = True\n            print(self.title, '대출 완료')\n\n    def return_book(self):\n        self.borrowed = False\n        print(self.title, '반납 완료')\n\nb = Book('파이썬 입문', '홍길동')\nb.borrow()\nb.borrow()\nb.return_book()\n# 복습 메모 2\n"
+    }
+  },
+  {
+    "date": "2025-02-22T00:39:35",
+    "message": "docstring 달아봄",
+    "files": {
+      "functions/basic_func.py": "def greet(name='친구'):\n    \"\"\"인사 함수\"\"\"\n    return f'안녕, {name}!'\n\ndef add(*args):\n    total = 0\n    for n in args:\n        total += n\n    return total\n\nprint(greet())\nprint(greet('지영'))\nprint(add(1, 2, 3, 4))\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-02-22T19:29:07",
+    "message": "유틸 함수 추가",
+    "files": {
+      "oop/library.py": "class Book:\n    def __init__(self, title, author):\n        self.title = title\n        self.author = author\n        self.borrowed = False\n\n    def borrow(self):\n        if self.borrowed:\n            print('이미 대출중')\n        else:\n            self.borrowed = True\n            print(self.title, '대출 완료')\n\n    def return_book(self):\n        self.borrowed = False\n        print(self.title, '반납 완료')\n\nb = Book('파이썬 입문', '홍길동')\nb.borrow()\nb.borrow()\nb.return_book()\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-02-25T16:32:45",
+    "message": "유틸 함수 추가",
+    "files": {
+      "functions/modules_demo.py": "import datetime as dt\n\nnow = dt.datetime.now()\nprint(now.strftime('%Y-%m-%d %H:%M'))\ntomorrow = now + dt.timedelta(days=1)\nprint('내일:', tomorrow.date())\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-02-25T23:04:24",
+    "message": "버그: 출금 조건 고침",
+    "files": {
+      "functions/recursion.py": "# 메모이제이션으로 fib 개선\nmemo = {0: 0, 1: 1}\n\ndef fib(n):\n    if n in memo:\n        return memo[n]\n    memo[n] = fib(n - 1) + fib(n - 2)\n    return memo[n]\n\nprint([fib(i) for i in range(15)])\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-02-25T23:42:41",
+    "message": "복습 커밋",
+    "files": {
+      "functions/utils.py": "\"\"\"자주 쓰는 유틸 함수\"\"\"\n\ndef is_even(n):\n    return n % 2 == 0\n\ndef clamp(n, lo, hi):\n    return max(lo, min(hi, n))\n\ndef average(nums):\n    if not nums:\n        raise ValueError('빈 리스트')\n    return sum(nums) / len(nums)\n\ndef unique(seq):\n    seen = []\n    for x in seq:\n        if x not in seen:\n            seen.append(x)\n    return seen\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-02-26T19:18:46",
+    "message": "코드 가독성 개선",
+    "files": {
+      "functions/modules_demo.py": "import datetime as dt\n\nnow = dt.datetime.now()\nprint(now.strftime('%Y-%m-%d %H:%M'))\ntomorrow = now + dt.timedelta(days=1)\nprint('내일:', tomorrow.date())\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-02-26T20:57:16",
+    "message": "복습 커밋",
+    "files": {
+      "functions/try_except.py": "def safe_div(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return None\n\nprint(safe_div(10, 2))\nprint(safe_div(10, 0))\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-02-26T22:59:20",
+    "message": "재귀에 메모이제이션",
+    "files": {
+      "functions/recursion.py": "# 메모이제이션으로 fib 개선\nmemo = {0: 0, 1: 1}\n\ndef fib(n):\n    if n in memo:\n        return memo[n]\n    memo[n] = fib(n - 1) + fib(n - 2)\n    return memo[n]\n\nprint([fib(i) for i in range(15)])\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-02-27T20:54:49",
+    "message": "메서드 하나 더 넣음",
+    "files": {
+      "functions/utils.py": "\"\"\"자주 쓰는 유틸 함수\"\"\"\n\ndef is_even(n):\n    return n % 2 == 0\n\ndef clamp(n, lo, hi):\n    return max(lo, min(hi, n))\n\ndef average(nums):\n    if not nums:\n        raise ValueError('빈 리스트')\n    return sum(nums) / len(nums)\n\ndef unique(seq):\n    seen = []\n    for x in seq:\n        if x not in seen:\n            seen.append(x)\n    return seen\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-02-28T22:24:42",
+    "message": "유틸 함수 추가",
+    "files": {
+      "oop/library.py": "class Book:\n    def __init__(self, title, author):\n        self.title = title\n        self.author = author\n        self.borrowed = False\n\n    def borrow(self):\n        if self.borrowed:\n            print('이미 대출중')\n        else:\n            self.borrowed = True\n            print(self.title, '대출 완료')\n\n    def return_book(self):\n        self.borrowed = False\n        print(self.title, '반납 완료')\n\nb = Book('파이썬 입문', '홍길동')\nb.borrow()\nb.borrow()\nb.return_book()\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-02-28T23:37:37",
+    "message": "docstring 달아봄",
+    "files": {
+      "functions/args_kwargs.py": "def intro(**kwargs):\n    for k, v in kwargs.items():\n        print(f'{k}: {v}')\n\nintro(name='철수', age=20, hobby='코딩')\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-03-02T22:00:46",
+    "message": "프로퍼티로 바꿔봄",
+    "files": {
+      "functions/lambda_map.py": "nums = [1, 2, 3, 4, 5]\ndoubled = [x * 2 for x in nums]  # map 대신 컴프리헨션\nevens = [x for x in nums if x % 2 == 0]\nprint(doubled, evens)\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-03-02T23:04:07",
+    "message": "docstring 달아봄",
+    "files": {
+      "oop/bank_account.py": "class Account:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self._balance = balance\n\n    @property\n    def balance(self):\n        return self._balance\n\n    def deposit(self, amount):\n        if amount <= 0:\n            raise ValueError('입금액은 양수')\n        self._balance += amount\n\n    def withdraw(self, amount):\n        if amount <= 0:\n            raise ValueError('출금액은 양수')\n        if amount > self._balance:\n            raise ValueError('잔액 부족')\n        self._balance -= amount\n\n    def __str__(self):\n        return f'{self.owner}: {self._balance}원'\n\ntry:\n    a = Account('민수', 1000)\n    a.deposit(500)\n    a.withdraw(200)\n    print(a)\nexcept ValueError as e:\n    print('오류:', e)\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-03-03T11:17:24",
+    "message": "복습 커밋",
+    "files": {
+      "functions/try_except.py": "def safe_div(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return None\n\nprint(safe_div(10, 2))\nprint(safe_div(10, 0))\n# 복습 메모 6\n"
+    }
+  },
+  {
+    "date": "2025-03-05T22:40:45",
+    "message": "메서드 하나 더 넣음",
+    "files": {
+      "functions/args_kwargs.py": "def intro(**kwargs):\n    for k, v in kwargs.items():\n        print(f'{k}: {v}')\n\nintro(name='철수', age=20, hobby='코딩')\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-03-05T23:33:05",
+    "message": "프로퍼티로 바꿔봄",
+    "files": {
+      "functions/args_kwargs.py": "def intro(**kwargs):\n    for k, v in kwargs.items():\n        print(f'{k}: {v}')\n\nintro(name='철수', age=20, hobby='코딩')\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-03-06T19:02:20",
+    "message": "잔액 검증 로직 수정",
+    "files": {
+      "functions/basic_func.py": "def greet(name='친구'):\n    \"\"\"인사 함수\"\"\"\n    return f'안녕, {name}!'\n\ndef add(*args):\n    total = 0\n    for n in args:\n        total += n\n    return total\n\nprint(greet())\nprint(greet('지영'))\nprint(add(1, 2, 3, 4))\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-03-06T20:33:26",
+    "message": "예외처리 세분화",
+    "files": {
+      "oop/bank_account.py": "class Account:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self._balance = balance\n\n    @property\n    def balance(self):\n        return self._balance\n\n    def deposit(self, amount):\n        if amount <= 0:\n            raise ValueError('입금액은 양수')\n        self._balance += amount\n\n    def withdraw(self, amount):\n        if amount <= 0:\n            raise ValueError('출금액은 양수')\n        if amount > self._balance:\n            raise ValueError('잔액 부족')\n        self._balance -= amount\n\n    def __str__(self):\n        return f'{self.owner}: {self._balance}원'\n\ntry:\n    a = Account('민수', 1000)\n    a.deposit(500)\n    a.withdraw(200)\n    print(a)\nexcept ValueError as e:\n    print('오류:', e)\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-03-07T19:39:55",
+    "message": "재귀에 메모이제이션",
+    "files": {
+      "functions/utils.py": "\"\"\"자주 쓰는 유틸 함수\"\"\"\n\ndef is_even(n):\n    return n % 2 == 0\n\ndef clamp(n, lo, hi):\n    return max(lo, min(hi, n))\n\ndef average(nums):\n    if not nums:\n        raise ValueError('빈 리스트')\n    return sum(nums) / len(nums)\n\ndef unique(seq):\n    seen = []\n    for x in seq:\n        if x not in seen:\n            seen.append(x)\n    return seen\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-03-10T23:04:14",
+    "message": "유틸 함수 추가",
+    "files": {
+      "oop/student.py": "class Student:\n    count = 0\n\n    def __init__(self, name, score):\n        self.name = name\n        self.score = score\n        Student.count += 1\n\n    def grade(self):\n        if self.score >= 90:\n            return 'A'\n        elif self.score >= 80:\n            return 'B'\n        elif self.score >= 70:\n            return 'C'\n        else:\n            return 'F'\n\n    def __str__(self):\n        return f'{self.name}({self.grade()})'\n\ns1 = Student('민수', 88)\ns2 = Student('지영', 95)\nprint(s1, s2)\nprint('학생 수:', Student.count)\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-03-11T19:57:51",
+    "message": "프로퍼티로 바꿔봄",
+    "files": {
+      "oop/student.py": "class Student:\n    count = 0\n\n    def __init__(self, name, score):\n        self.name = name\n        self.score = score\n        Student.count += 1\n\n    def grade(self):\n        if self.score >= 90:\n            return 'A'\n        elif self.score >= 80:\n            return 'B'\n        elif self.score >= 70:\n            return 'C'\n        else:\n            return 'F'\n\n    def __str__(self):\n        return f'{self.name}({self.grade()})'\n\ns1 = Student('민수', 88)\ns2 = Student('지영', 95)\nprint(s1, s2)\nprint('학생 수:', Student.count)\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-03-12T19:28:22",
+    "message": "상속 예제 다듬음",
+    "files": {
+      "oop/bank_account.py": "class Account:\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self._balance = balance\n\n    @property\n    def balance(self):\n        return self._balance\n\n    def deposit(self, amount):\n        if amount <= 0:\n            raise ValueError('입금액은 양수')\n        self._balance += amount\n\n    def withdraw(self, amount):\n        if amount <= 0:\n            raise ValueError('출금액은 양수')\n        if amount > self._balance:\n            raise ValueError('잔액 부족')\n        self._balance -= amount\n\n    def __str__(self):\n        return f'{self.owner}: {self._balance}원'\n\ntry:\n    a = Account('민수', 1000)\n    a.deposit(500)\n    a.withdraw(200)\n    print(a)\nexcept ValueError as e:\n    print('오류:', e)\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-03-13T00:58:54",
+    "message": "주석 보강",
+    "files": {
+      "functions/modules_demo.py": "import datetime as dt\n\nnow = dt.datetime.now()\nprint(now.strftime('%Y-%m-%d %H:%M'))\ntomorrow = now + dt.timedelta(days=1)\nprint('내일:', tomorrow.date())\n# 복습 메모 6\n"
+    }
+  },
+  {
+    "date": "2025-03-16T20:24:36",
+    "message": "크롤링 예제 파일 추가",
+    "files": {
+      "io/write_file.py": "f = open('io/memo.txt', 'w')\nf.write('오늘 공부 내용\\n')\nf.close()\n"
+    }
+  },
+  {
+    "date": "2025-03-16T22:22:25",
+    "message": "pandas 입문",
+    "files": {
+      "analysis/series_practice.py": "import pandas as pd\n\ns = pd.Series([10, 20, 30], index=['a', 'b', 'c'])\nprint(s)\nprint(s['a'])\n"
+    }
+  },
+  {
+    "date": "2025-03-17T00:29:38",
+    "message": "분석용 데이터 저장",
+    "files": {
+      "io/read_file.py": "f = open('io/memo.txt', 'r')\nprint(f.read())\nf.close()\n"
+    }
+  },
+  {
+    "date": "2025-03-17T01:27:53",
+    "message": "파일 쓰기 연습",
+    "files": {
+      "io/memo.txt": "오늘 공부 내용\n"
+    }
+  },
+  {
+    "date": "2025-03-19T22:02:37",
+    "message": "csv 다뤄봄",
+    "files": {
+      "analysis/weather_data.py": "import pandas as pd\n\ndata = {\n    'date': ['2025-04-01', '2025-04-02', '2025-04-03'],\n    'temp': [12.5, 14.0, 11.2],\n    'rain': [0, 5.2, 0],\n}\ndf = pd.DataFrame(data)\nprint(df)\n"
+    }
+  },
+  {
+    "date": "2025-03-21T22:07:29",
+    "message": "뷰티풀숲 파싱 연습",
+    "files": {
+      "crawling/requests_intro.py": "# requests 맛보기 (실제 요청은 주석)\n# import requests\n# r = requests.get('https://example.com')\n# print(r.status_code)\nprint('requests 설치 확인용 스텁')\n"
+    }
+  },
+  {
+    "date": "2025-03-21T22:43:16",
+    "message": "pandas 필터 연습",
+    "files": {
+      "io/memo.txt": "오늘 공부 내용\n파일 입출력 연습\n"
+    }
+  },
+  {
+    "date": "2025-03-21T23:28:23",
+    "message": "pathlib 써봄",
+    "files": {
+      "io/read_file.py": "with open('io/memo.txt', 'r', encoding='utf-8') as f:\n    for line in f:\n        print(line.strip())\n"
+    }
+  },
+  {
+    "date": "2025-03-22T22:02:02",
+    "message": "평균 계산 버그 수정",
+    "files": {
+      "io/csv_demo.py": "import csv\n\nwith open('io/scores.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.writer(f)\n    w.writerow(['name', 'score'])\n    w.writerow(['민수', 88])\n    w.writerow(['지영', 95])\n",
+      "io/scores.csv": "name,score\n민수,88\n지영,95\n현우,72\n"
+    }
+  },
+  {
+    "date": "2025-03-22T23:28:35",
+    "message": "requests 스텁 작성",
+    "files": {
+      "io/scores.csv": "name,score\n민수,88\n지영,95\n"
+    }
+  },
+  {
+    "date": "2025-03-24T22:13:28",
+    "message": "시리즈 연습",
+    "files": {
+      "io/json_demo.py": "import json\n\ndata = {'name': '민수', 'skills': ['python', 'html']}\nprint(json.dumps(data, ensure_ascii=False))\n"
+    }
+  },
+  {
+    "date": "2025-03-24T23:02:41",
+    "message": "주석 정리",
+    "files": {
+      "analysis/weather_data.py": "import pandas as pd\n\ndf = pd.DataFrame({\n    'date': pd.date_range('2025-04-01', periods=7),\n    'temp': [12.5, 14.0, 11.2, 15.3, 13.8, 16.1, 14.7],\n    'rain': [0, 5.2, 0, 0, 1.1, 0, 3.4],\n})\nprint('평균기온:', df['temp'].mean())\nprint('비온 날:', df[df['rain'] > 0])\ndf.to_csv('analysis/weather.csv', index=False)\n"
+    }
+  },
+  {
+    "date": "2025-03-25T21:03:25",
+    "message": "json 저장 연습",
+    "files": {
+      "crawling/bs4_intro.py": "from bs4 import BeautifulSoup\n\nhtml = '<html><body><h1>제목</h1><p>내용</p></body></html>'\nsoup = BeautifulSoup(html, 'html.parser')\nprint(soup.h1.text)\nprint(soup.p.text)\n"
+    }
+  },
+  {
+    "date": "2025-03-25T21:40:15",
+    "message": "뷰티풀숲 파싱 연습",
+    "files": {
+      "crawling/titles.csv": "title,href\n속보: 파이썬 인기,/1\n날씨 맑음,/2\n학습 팁,/3\n"
+    }
+  },
+  {
+    "date": "2025-03-26T20:52:55",
+    "message": "csv 다뤄봄",
+    "files": {
+      "io/profile.json": "{\n  \"name\": \"민수\",\n  \"skills\": [\"python\", \"html\"]\n}\n"
+    }
+  },
+  {
+    "date": "2025-03-26T21:37:37",
+    "message": "뉴스 제목 추출 초안",
+    "files": {
+      "analysis/pandas_intro.py": "import pandas as pd\n\ndf = pd.DataFrame({'name': ['민수', '지영'], 'score': [88, 95]})\nprint(df)\n"
+    }
+  },
+  {
+    "date": "2025-03-29T20:16:03",
+    "message": "파일 읽기 추가",
+    "files": {
+      "analysis/weather.csv": "date,temp,rain\n2025-04-01,12.5,0.0\n2025-04-02,14.0,5.2\n2025-04-03,11.2,0.0\n2025-04-04,15.3,0.0\n2025-04-05,13.8,1.1\n2025-04-06,16.1,0.0\n2025-04-07,14.7,3.4\n"
+    }
+  },
+  {
+    "date": "2025-03-29T21:32:37",
+    "message": "파일 쓰기 연습",
+    "files": {
+      "crawling/news_titles.py": "from bs4 import BeautifulSoup\n\n# 실제 사이트 대신 샘플 HTML\nsample = '<a class=\"title\">속보1</a><a class=\"title\">속보2</a>'\nsoup = BeautifulSoup(sample, 'html.parser')\nfor a in soup.select('a.title'):\n    print(a.text)\n"
+    }
+  },
+  {
+    "date": "2025-03-29T22:41:06",
+    "message": "with문으로 바꿈",
+    "files": {
+      "crawling/requests_intro.py": "import requests\n\nurl = 'https://example.com'\ntry:\n    r = requests.get(url, timeout=5)\n    print('status:', r.status_code)\n    print(r.text[:200])\nexcept Exception as e:\n    print('요청 실패:', e)\n"
+    }
+  },
+  {
+    "date": "2025-03-30T17:27:43",
+    "message": "json 필드 추가",
+    "files": {
+      "io/read_file.py": "from pathlib import Path\n\npath = Path('io/memo.txt')\nif path.exists():\n    text = path.read_text(encoding='utf-8')\n    print(text)\nelse:\n    print('파일 없음')\n"
+    }
+  },
+  {
+    "date": "2025-03-31T19:20:38",
+    "message": "날씨 데이터 확장",
+    "files": {
+      "io/csv_demo.py": "import csv\n\nwith open('io/scores.csv', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row['name'], row['score'])\n",
+      "io/scores.csv": "name,score\n민수,88\n지영,95\n현우,72\n수진,90\n"
+    }
+  },
+  {
+    "date": "2025-03-31T20:32:02",
+    "message": "json 필드 추가",
+    "files": {
+      "crawling/news_titles.py": "from bs4 import BeautifulSoup\n\nsample = '''\n<div class=\"news\">\n  <a class=\"title\" href=\"/1\">속보: 파이썬 인기</a>\n  <a class=\"title\" href=\"/2\">날씨 맑음</a>\n  <a class=\"title\" href=\"/3\">학습 팁</a>\n</div>\n'''\nsoup = BeautifulSoup(sample, 'html.parser')\nfor a in soup.select('a.title'):\n    print(a.text.strip(), '->', a.get('href'))\n"
+    }
+  },
+  {
+    "date": "2025-03-31T22:06:50",
+    "message": "분석 코드 리팩터",
+    "files": {
+      "io/memo.txt": "변수\n함수\n클래스\n파일입출력\n"
+    }
+  },
+  {
+    "date": "2025-04-01T11:27:13",
+    "message": "pandas 필터 연습",
+    "files": {
+      "analysis/series_practice.py": "import pandas as pd\n\ns = pd.Series([10, 20, None, 40])\nprint(s.isnull())\nprint(s.fillna(0))\nprint(s.dropna())\n"
+    }
+  },
+  {
+    "date": "2025-04-03T22:25:26",
+    "message": "파싱 셀렉터 수정",
+    "files": {
+      "io/memo.txt": "변수\n함수\n클래스\n파일입출력\npandas 예습\n"
+    }
+  },
+  {
+    "date": "2025-04-03T23:00:43",
+    "message": "encoding utf-8 명시",
+    "files": {
+      "io/csv_demo.py": "import csv\n\nrows = [\n    {'name': '민수', 'score': 88},\n    {'name': '지영', 'score': 95},\n    {'name': '현우', 'score': 72},\n]\nwith open('io/scores.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['name', 'score'])\n    w.writeheader()\n    w.writerows(rows)\n\nwith open('io/scores.csv', encoding='utf-8') as f:\n    for row in csv.DictReader(f):\n        print(f\"{row['name']}: {row['score']}점\")\n"
+    }
+  },
+  {
+    "date": "2025-04-03T23:36:00",
+    "message": "크롤링 결과 csv 저장",
+    "files": {
+      "analysis/weather_data.py": "import pandas as pd\n\ndf = pd.read_csv('analysis/weather.csv', parse_dates=['date'])\ndf['weekday'] = df['date'].dt.day_name()\nprint(df)\nprint('최고기온 날:', df.loc[df['temp'].idxmax()])\n"
+    }
+  },
+  {
+    "date": "2025-04-04T22:09:42",
+    "message": "encoding utf-8 명시",
+    "files": {
+      "analysis/pandas_intro.py": "import pandas as pd\n\ndf = pd.read_csv('io/scores.csv')\nprint(df)\nprint(df['score'].mean())\nprint(df.describe())\n"
+    }
+  },
+  {
+    "date": "2025-04-04T22:55:58",
+    "message": "날씨 데이터 확장",
+    "files": {
+      "crawling/news_titles.py": "from bs4 import BeautifulSoup\nimport csv\n\nsample = '''\n<div class=\"news\">\n  <a class=\"title\" href=\"/1\">속보: 파이썬 인기</a>\n  <a class=\"title\" href=\"/2\">날씨 맑음</a>\n  <a class=\"title\" href=\"/3\">학습 팁</a>\n</div>\n'''\nsoup = BeautifulSoup(sample, 'html.parser')\nrows = []\nfor a in soup.select('a.title'):\n    rows.append({'title': a.text.strip(), 'href': a.get('href')})\n\nwith open('crawling/titles.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['title', 'href'])\n    w.writeheader()\n    w.writerows(rows)\nprint(len(rows), '개 저장')\n",
+      "crawling/titles.csv": "title,href\n속보: 파이썬 인기,/1\n날씨 맑음,/2\n학습 팁,/3\n# 복습 메모 1\n"
+    }
+  },
+  {
+    "date": "2025-04-06T23:11:07",
+    "message": "출력 보기 좋게",
+    "files": {
+      "io/profile.json": "{\n  \"name\": \"민수\",\n  \"skills\": [\"python\", \"html\", \"csv\"],\n  \"level\": \"beginner\"\n}\n"
+    }
+  },
+  {
+    "date": "2025-04-07T23:24:52",
+    "message": "분석 코드 리팩터",
+    "files": {
+      "io/write_file.py": "with open('io/memo.txt', 'w', encoding='utf-8') as f:\n    f.write('오늘 공부 내용\\n')\n    f.write('파일 입출력 연습\\n')\n"
+    }
+  },
+  {
+    "date": "2025-04-09T10:01:11",
+    "message": "날씨 데이터 확장",
+    "files": {
+      "analysis/pandas_intro.py": "import pandas as pd\n\ndf = pd.read_csv('io/scores.csv')\nprint('평균:', df['score'].mean())\nprint('최고:', df['score'].max())\nprint(df[df['score'] >= 90])\ndf['pass'] = df['score'] >= 60\nprint(df)\n"
+    }
+  },
+  {
+    "date": "2025-04-10T16:00:11",
+    "message": "크롤링 결과 csv 저장",
+    "files": {
+      "io/json_demo.py": "import json\n\ndata = {'name': '민수', 'skills': ['python', 'html']}\nwith open('io/profile.json', 'w', encoding='utf-8') as f:\n    json.dump(data, f, ensure_ascii=False, indent=2)\n"
+    }
+  },
+  {
+    "date": "2025-04-13T19:05:47",
+    "message": "json 필드 추가",
+    "files": {
+      "io/json_demo.py": "import json\n\nwith open('io/profile.json', encoding='utf-8') as f:\n    data = json.load(f)\nprint(data['name'])\nprint(', '.join(data['skills']))\n"
+    }
+  },
+  {
+    "date": "2025-04-13T21:19:46",
+    "message": "파일 없을 때 처리",
+    "files": {
+      "analysis/pandas_intro.py": "import pandas as pd\n\ndf = pd.read_csv('io/scores.csv')\nsummary = df.groupby(df['score'] // 10 * 10)['name'].count()\nprint('점수대별 인원')\nprint(summary)\ndf_sorted = df.sort_values('score', ascending=False)\nprint(df_sorted.head())\n"
+    }
+  },
+  {
+    "date": "2025-04-14T19:09:10",
+    "message": "날씨 데이터 확장",
+    "files": {
+      "io/write_file.py": "lines = ['변수', '함수', '클래스', '파일입출력']\nwith open('io/memo.txt', 'w', encoding='utf-8') as f:\n    for line in lines:\n        f.write(line + '\\n')\nprint('저장 완료')\n"
+    }
+  },
+  {
+    "date": "2025-04-14T22:31:38",
+    "message": "pandas 필터 연습",
+    "files": {
+      "crawling/bs4_intro.py": "from bs4 import BeautifulSoup\n\nhtml = '''\n<html><body>\n  <h1>뉴스</h1>\n  <ul>\n    <li class=\"item\">기사1</li>\n    <li class=\"item\">기사2</li>\n    <li class=\"item\">기사3</li>\n  </ul>\n</body></html>\n'''\nsoup = BeautifulSoup(html, 'html.parser')\nfor li in soup.select('li.item'):\n    print(li.get_text())\n"
+    }
+  },
+  {
+    "date": "2025-04-14T23:56:45",
+    "message": "파일 없을 때 처리",
+    "files": {
+      "crawling/bs4_intro.py": "from bs4 import BeautifulSoup\n\nhtml = '''\n<div class=\"product\">\n  <span class=\"name\">노트북</span>\n  <span class=\"price\">1200000</span>\n</div>\n<div class=\"product\">\n  <span class=\"name\">마우스</span>\n  <span class=\"price\">25000</span>\n</div>\n'''\nsoup = BeautifulSoup(html, 'html.parser')\nproducts = []\nfor div in soup.select('div.product'):\n    products.append({\n        'name': div.select_one('.name').text,\n        'price': int(div.select_one('.price').text),\n    })\nprint(products)\n"
+    }
+  },
+  {
+    "date": "2025-04-17T21:02:14",
+    "message": "with문으로 바꿈",
+    "files": {
+      "io/profile.json": "{\n  \"name\": \"민수\",\n  \"skills\": [\"python\", \"html\", \"csv\"],\n  \"level\": \"beginner\"\n}\n# 복습 메모 2\n"
+    }
+  },
+  {
+    "date": "2025-04-17T21:56:37",
+    "message": "encoding utf-8 명시",
+    "files": {
+      "io/scores.csv": "name,score\n민수,88\n지영,95\n현우,72\n수진,90\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-18T22:11:08",
+    "message": "pandas 필터 연습",
+    "files": {
+      "io/profile.json": "{\n  \"name\": \"민수\",\n  \"skills\": [\"python\", \"html\", \"csv\"],\n  \"level\": \"beginner\"\n}\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-19T21:04:25",
+    "message": "크롤링 결과 csv 저장",
+    "files": {
+      "crawling/news_titles.py": "from bs4 import BeautifulSoup\nimport csv\n\nsample = '''\n<div class=\"news\">\n  <a class=\"title\" href=\"/1\">속보: 파이썬 인기</a>\n  <a class=\"title\" href=\"/2\">날씨 맑음</a>\n  <a class=\"title\" href=\"/3\">학습 팁</a>\n</div>\n'''\nsoup = BeautifulSoup(sample, 'html.parser')\nrows = []\nfor a in soup.select('a.title'):\n    rows.append({'title': a.text.strip(), 'href': a.get('href')})\n\nwith open('crawling/titles.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['title', 'href'])\n    w.writeheader()\n    w.writerows(rows)\nprint(len(rows), '개 저장')\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-19T22:47:52",
+    "message": "분석 코드 리팩터",
+    "files": {
+      "analysis/weather_data.py": "import pandas as pd\n\ndf = pd.read_csv('analysis/weather.csv', parse_dates=['date'])\ndf['weekday'] = df['date'].dt.day_name()\nprint(df)\nprint('최고기온 날:', df.loc[df['temp'].idxmax()])\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-19T23:59:02",
+    "message": "json 필드 추가",
+    "files": {
+      "crawling/bs4_intro.py": "from bs4 import BeautifulSoup\n\nhtml = '''\n<div class=\"product\">\n  <span class=\"name\">노트북</span>\n  <span class=\"price\">1200000</span>\n</div>\n<div class=\"product\">\n  <span class=\"name\">마우스</span>\n  <span class=\"price\">25000</span>\n</div>\n'''\nsoup = BeautifulSoup(html, 'html.parser')\nproducts = []\nfor div in soup.select('div.product'):\n    products.append({\n        'name': div.select_one('.name').text,\n        'price': int(div.select_one('.price').text),\n    })\nprint(products)\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-23T10:05:27",
+    "message": "크롤링 결과 csv 저장",
+    "files": {
+      "crawling/news_titles.py": "from bs4 import BeautifulSoup\nimport csv\n\nsample = '''\n<div class=\"news\">\n  <a class=\"title\" href=\"/1\">속보: 파이썬 인기</a>\n  <a class=\"title\" href=\"/2\">날씨 맑음</a>\n  <a class=\"title\" href=\"/3\">학습 팁</a>\n</div>\n'''\nsoup = BeautifulSoup(sample, 'html.parser')\nrows = []\nfor a in soup.select('a.title'):\n    rows.append({'title': a.text.strip(), 'href': a.get('href')})\n\nwith open('crawling/titles.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['title', 'href'])\n    w.writeheader()\n    w.writerows(rows)\nprint(len(rows), '개 저장')\n# 복습 메모 4\n",
+      "crawling/titles.csv": "title,href\n속보: 파이썬 인기,/1\n날씨 맑음,/2\n학습 팁,/3\n# 복습 메모 2\n"
+    }
+  },
+  {
+    "date": "2025-04-24T22:33:32",
+    "message": "파싱 셀렉터 수정",
+    "files": {
+      "io/csv_demo.py": "import csv\n\nrows = [\n    {'name': '민수', 'score': 88},\n    {'name': '지영', 'score': 95},\n    {'name': '현우', 'score': 72},\n]\nwith open('io/scores.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['name', 'score'])\n    w.writeheader()\n    w.writerows(rows)\n\nwith open('io/scores.csv', encoding='utf-8') as f:\n    for row in csv.DictReader(f):\n        print(f\"{row['name']}: {row['score']}점\")\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-24T23:23:09",
+    "message": "파싱 셀렉터 수정",
+    "files": {
+      "crawling/news_titles.py": "from bs4 import BeautifulSoup\nimport csv\n\nsample = '''\n<div class=\"news\">\n  <a class=\"title\" href=\"/1\">속보: 파이썬 인기</a>\n  <a class=\"title\" href=\"/2\">날씨 맑음</a>\n  <a class=\"title\" href=\"/3\">학습 팁</a>\n</div>\n'''\nsoup = BeautifulSoup(sample, 'html.parser')\nrows = []\nfor a in soup.select('a.title'):\n    rows.append({'title': a.text.strip(), 'href': a.get('href')})\n\nwith open('crawling/titles.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['title', 'href'])\n    w.writeheader()\n    w.writerows(rows)\nprint(len(rows), '개 저장')\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-04-25T01:22:52",
+    "message": "csv에 행 추가",
+    "files": {
+      "io/memo.txt": "변수\n함수\n클래스\n파일입출력\npandas 예습\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-04-25T20:38:09",
+    "message": "encoding utf-8 명시",
+    "files": {
+      "crawling/bs4_intro.py": "from bs4 import BeautifulSoup\n\nhtml = '''\n<div class=\"product\">\n  <span class=\"name\">노트북</span>\n  <span class=\"price\">1200000</span>\n</div>\n<div class=\"product\">\n  <span class=\"name\">마우스</span>\n  <span class=\"price\">25000</span>\n</div>\n'''\nsoup = BeautifulSoup(html, 'html.parser')\nproducts = []\nfor div in soup.select('div.product'):\n    products.append({\n        'name': div.select_one('.name').text,\n        'price': int(div.select_one('.price').text),\n    })\nprint(products)\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-04-25T22:29:48",
+    "message": "json 필드 추가",
+    "files": {
+      "analysis/weather_data.py": "import pandas as pd\n\ndf = pd.read_csv('analysis/weather.csv', parse_dates=['date'])\ndf['weekday'] = df['date'].dt.day_name()\nprint(df)\nprint('최고기온 날:', df.loc[df['temp'].idxmax()])\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-04-26T01:12:41",
+    "message": "파싱 셀렉터 수정",
+    "files": {
+      "analysis/weather.csv": "date,temp,rain\n2025-04-01,12.5,0.0\n2025-04-02,14.0,5.2\n2025-04-03,11.2,0.0\n2025-04-04,15.3,0.0\n2025-04-05,13.8,1.1\n2025-04-06,16.1,0.0\n2025-04-07,14.7,3.4\n# 복습 메모 1\n"
+    }
+  },
+  {
+    "date": "2025-04-27T11:20:09",
+    "message": "json 필드 추가",
+    "files": {
+      "analysis/pandas_intro.py": "import pandas as pd\n\ndf = pd.read_csv('io/scores.csv')\nsummary = df.groupby(df['score'] // 10 * 10)['name'].count()\nprint('점수대별 인원')\nprint(summary)\ndf_sorted = df.sort_values('score', ascending=False)\nprint(df_sorted.head())\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-04-29T00:35:37",
+    "message": "encoding utf-8 명시",
+    "files": {
+      "io/write_file.py": "lines = ['변수', '함수', '클래스', '파일입출력']\nwith open('io/memo.txt', 'w', encoding='utf-8') as f:\n    for line in lines:\n        f.write(line + '\\n')\nprint('저장 완료')\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-30T22:02:03",
+    "message": "분석 코드 리팩터",
+    "files": {
+      "io/json_demo.py": "import json\n\nwith open('io/profile.json', encoding='utf-8') as f:\n    data = json.load(f)\nprint(data['name'])\nprint(', '.join(data['skills']))\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-04-30T23:15:09",
+    "message": "csv에 행 추가",
+    "files": {
+      "analysis/weather_data.py": "import pandas as pd\n\ndf = pd.read_csv('analysis/weather.csv', parse_dates=['date'])\ndf['weekday'] = df['date'].dt.day_name()\nprint(df)\nprint('최고기온 날:', df.loc[df['temp'].idxmax()])\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-04-30T23:45:32",
+    "message": "출력 보기 좋게",
+    "files": {
+      "analysis/pandas_intro.py": "import pandas as pd\n\ndf = pd.read_csv('io/scores.csv')\nsummary = df.groupby(df['score'] // 10 * 10)['name'].count()\nprint('점수대별 인원')\nprint(summary)\ndf_sorted = df.sort_values('score', ascending=False)\nprint(df_sorted.head())\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-05-01T17:06:51",
+    "message": "주석 정리",
+    "files": {
+      "crawling/titles.csv": "title,href\n속보: 파이썬 인기,/1\n날씨 맑음,/2\n학습 팁,/3\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-05-02T20:02:15",
+    "message": "json 필드 추가",
+    "files": {
+      "crawling/requests_intro.py": "import requests\n\nurl = 'https://example.com'\ntry:\n    r = requests.get(url, timeout=5)\n    print('status:', r.status_code)\n    print(r.text[:200])\nexcept Exception as e:\n    print('요청 실패:', e)\n# 복습 메모 2\n"
+    }
+  },
+  {
+    "date": "2025-05-02T23:05:23",
+    "message": "크롤링 결과 csv 저장",
+    "files": {
+      "io/json_demo.py": "import json\n\nwith open('io/profile.json', encoding='utf-8') as f:\n    data = json.load(f)\nprint(data['name'])\nprint(', '.join(data['skills']))\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-05-04T21:43:38",
+    "message": "분석 코드 리팩터",
+    "files": {
+      "io/write_file.py": "lines = ['변수', '함수', '클래스', '파일입출력']\nwith open('io/memo.txt', 'w', encoding='utf-8') as f:\n    for line in lines:\n        f.write(line + '\\n')\nprint('저장 완료')\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-05-04T23:40:02",
+    "message": "pathlib 써봄",
+    "files": {
+      "io/scores.csv": "name,score\n민수,88\n지영,95\n현우,72\n수진,90\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-05-06T01:17:55",
+    "message": "파일 없을 때 처리",
+    "files": {
+      "io/memo.txt": "변수\n함수\n클래스\n파일입출력\npandas 예습\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-05-06T03:11:39",
+    "message": "주석 정리",
+    "files": {
+      "analysis/weather.csv": "date,temp,rain\n2025-04-01,12.5,0.0\n2025-04-02,14.0,5.2\n2025-04-03,11.2,0.0\n2025-04-04,15.3,0.0\n2025-04-05,13.8,1.1\n2025-04-06,16.1,0.0\n2025-04-07,14.7,3.4\n# 복습 메모 2\n"
+    }
+  },
+  {
+    "date": "2025-05-08T16:35:24",
+    "message": "pathlib 써봄",
+    "files": {
+      "analysis/weather.csv": "date,temp,rain\n2025-04-01,12.5,0.0\n2025-04-02,14.0,5.2\n2025-04-03,11.2,0.0\n2025-04-04,15.3,0.0\n2025-04-05,13.8,1.1\n2025-04-06,16.1,0.0\n2025-04-07,14.7,3.4\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-05-09T22:31:12",
+    "message": "csv에 행 추가",
+    "files": {
+      "io/csv_demo.py": "import csv\n\nrows = [\n    {'name': '민수', 'score': 88},\n    {'name': '지영', 'score': 95},\n    {'name': '현우', 'score': 72},\n]\nwith open('io/scores.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['name', 'score'])\n    w.writeheader()\n    w.writerows(rows)\n\nwith open('io/scores.csv', encoding='utf-8') as f:\n    for row in csv.DictReader(f):\n        print(f\"{row['name']}: {row['score']}점\")\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-05-09T23:20:45",
+    "message": "출력 보기 좋게",
+    "files": {
+      "analysis/weather.csv": "date,temp,rain\n2025-04-01,12.5,0.0\n2025-04-02,14.0,5.2\n2025-04-03,11.2,0.0\n2025-04-04,15.3,0.0\n2025-04-05,13.8,1.1\n2025-04-06,16.1,0.0\n2025-04-07,14.7,3.4\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-05-09T23:51:05",
+    "message": "파싱 셀렉터 수정",
+    "files": {
+      "analysis/weather.csv": "date,temp,rain\n2025-04-01,12.5,0.0\n2025-04-02,14.0,5.2\n2025-04-03,11.2,0.0\n2025-04-04,15.3,0.0\n2025-04-05,13.8,1.1\n2025-04-06,16.1,0.0\n2025-04-07,14.7,3.4\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-05-11T22:26:23",
+    "message": "json 필드 추가",
+    "files": {
+      "analysis/weather.csv": "date,temp,rain\n2025-04-01,12.5,0.0\n2025-04-02,14.0,5.2\n2025-04-03,11.2,0.0\n2025-04-04,15.3,0.0\n2025-04-05,13.8,1.1\n2025-04-06,16.1,0.0\n2025-04-07,14.7,3.4\n# 복습 메모 6\n"
+    }
+  },
+  {
+    "date": "2025-05-11T23:12:09",
+    "message": "주석 정리",
+    "files": {
+      "io/memo.txt": "변수\n함수\n클래스\n파일입출력\npandas 예습\n# 복습 메모 6\n"
+    }
+  },
+  {
+    "date": "2025-05-12T22:14:34",
+    "message": "출력 보기 좋게",
+    "files": {
+      "io/csv_demo.py": "import csv\n\nrows = [\n    {'name': '민수', 'score': 88},\n    {'name': '지영', 'score': 95},\n    {'name': '현우', 'score': 72},\n]\nwith open('io/scores.csv', 'w', newline='', encoding='utf-8') as f:\n    w = csv.DictWriter(f, fieldnames=['name', 'score'])\n    w.writeheader()\n    w.writerows(rows)\n\nwith open('io/scores.csv', encoding='utf-8') as f:\n    for row in csv.DictReader(f):\n        print(f\"{row['name']}: {row['score']}점\")\n# 복습 메모 5\n"
+    }
+  },
+  {
+    "date": "2025-05-13T09:23:43",
+    "message": "json 필드 추가",
+    "files": {
+      "analysis/weather_data.py": "import pandas as pd\n\ndf = pd.read_csv('analysis/weather.csv', parse_dates=['date'])\ndf['weekday'] = df['date'].dt.day_name()\nprint(df)\nprint('최고기온 날:', df.loc[df['temp'].idxmax()])\n# 복습 메모 6\n"
+    }
+  },
+  {
+    "date": "2025-05-15T00:48:32",
+    "message": "연락처 관리 프로젝트 시작",
+    "files": {
+      "projects/weather_collector.py": "# 날씨 수집기 초안\ntemps = [12.5, 14.0, 11.2]\nprint('평균:', sum(temps) / len(temps))\n"
+    }
+  },
+  {
+    "date": "2025-05-16T00:47:35",
+    "message": "테스트하면서 고침",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom datetime import date\n\ndef save_temp(day, temp, rain=0.0):\n    with open('projects/weather_log.csv', 'a', newline='', encoding='utf-8') as f:\n        w = csv.writer(f)\n        w.writerow([day, temp, rain])\n\nsave_temp(str(date.today()), 15.2, 0)\nprint('저장됨')\n"
+    }
+  },
+  {
+    "date": "2025-05-16T22:57:32",
+    "message": "날씨 수집기 초안",
+    "files": {
+      "projects/contacts.py": "# 연락처 관리 (리스트)\ncontacts = []\ncontacts.append({'name': '민수', 'phone': '010-1111-2222'})\nprint(contacts)\n"
+    }
+  },
+  {
+    "date": "2025-05-18T10:59:01",
+    "message": "연락처 관리 프로젝트 시작",
+    "files": {
+      "projects/contacts.json": "[]\n"
+    }
+  },
+  {
+    "date": "2025-05-18T19:20:59",
+    "message": "날씨 수집기 초안",
+    "files": {
+      "projects/todo.py": "todos = []\ntodos.append('파이썬 복습')\nprint(todos)\n"
+    }
+  },
+  {
+    "date": "2025-05-19T22:44:53",
+    "message": "연락처 관리 프로젝트 시작",
+    "files": {
+      "projects/readme_notes.md": "# 미니 프로젝트 메모\n\n- 연락처 관리\n- 날씨 수집\n"
+    }
+  },
+  {
+    "date": "2025-05-21T20:53:09",
+    "message": "테스트하면서 고침",
+    "files": {
+      "projects/readme_notes.md": "# 미니 프로젝트 메모\n\n## 연락처 관리\n- json 저장\n- 검색 기능\n\n## 날씨 수집\n- csv 로그\n- 리포트 출력\n\n## 할일\n- todo 앱도 파일 저장으로 개선함\n"
+    }
+  },
+  {
+    "date": "2025-05-23T21:07:03",
+    "message": "연락처 관리 프로젝트 시작",
+    "files": {
+      "projects/todos.json": "[\n  {\"task\": \"미니프로젝트 마무리\", \"done\": true},\n  {\"task\": \"README 정리\", \"done\": false}\n]\n"
+    }
+  },
+  {
+    "date": "2025-05-23T21:39:43",
+    "message": "미니프로젝트 구조 잡기",
+    "files": {
+      "projects/weather_log.csv": "date,temp,rain\n2025-05-20,18.3,0\n2025-05-21,17.1,2.5\n"
+    }
+  },
+  {
+    "date": "2025-05-23T23:13:11",
+    "message": "미니프로젝트 구조 잡기",
+    "files": {
+      "projects/weather_report.txt": "날씨 리포트\n============\n2025-05-20: 18.3도, 강수 0mm\n2025-05-21: 17.1도, 강수 2.5mm\n"
+    }
+  },
+  {
+    "date": "2025-05-25T11:00:24",
+    "message": "프로젝트 메모 업데이트",
+    "files": {
+      "projects/weather_log.csv": "date,temp,rain\n2025-05-20,18.3,0\n2025-05-21,17.1,2.5\n2025-05-22,19.0,0\n2025-05-23,16.4,4.1\n"
+    }
+  },
+  {
+    "date": "2025-05-25T16:47:01",
+    "message": "todo 완료 표시 고침",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\nfrom datetime import date\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef summary():\n    if not LOG.exists():\n        print('데이터 없음')\n        return\n    with open(LOG, encoding='utf-8') as f:\n        rows = list(csv.DictReader(f))\n    temps = [float(r['temp']) for r in rows]\n    print(f'{len(temps)}일, 평균 {sum(temps)/len(temps):.1f}도')\n\nif __name__ == '__main__':\n    save_temp('2025-05-20', 18.3, 0)\n    save_temp('2025-05-21', 17.1, 2.5)\n    summary()\n"
+    }
+  },
+  {
+    "date": "2025-05-25T19:49:37",
+    "message": "중복 이름 업데이트 처리",
+    "files": {
+      "projects/todo.py": "todos = []\n\ndef add(item):\n    todos.append({'task': item, 'done': False})\n\ndef done(index):\n    todos[index]['done'] = True\n\nadd('파이썬 복습')\nadd('커밋하기')\ndone(0)\nfor t in todos:\n    mark = '[x]' if t['done'] else '[ ]'\n    print(mark, t['task'])\n"
+    }
+  },
+  {
+    "date": "2025-05-26T23:10:52",
+    "message": "테스트하면서 고침",
+    "files": {
+      "projects/todo.py": "import json\nfrom pathlib import Path\n\nDATA = Path('projects/todos.json')\n\ndef load():\n    if DATA.exists():\n        return json.loads(DATA.read_text(encoding='utf-8'))\n    return []\n\ndef save(items):\n    DATA.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding='utf-8')\n\ndef add(item):\n    items = load()\n    items.append({'task': item, 'done': False})\n    save(items)\n\ndef complete(index):\n    items = load()\n    items[index]['done'] = True\n    save(items)\n\ndef show():\n    for i, t in enumerate(load()):\n        mark = '[x]' if t['done'] else '[ ]'\n        print(i, mark, t['task'])\n\nif __name__ == '__main__':\n    add('미니프로젝트 마무리')\n    add('README 정리')\n    complete(0)\n    show()\n",
+      "projects/todos.json": "[\n  {\"task\": \"미니프로젝트 마무리\", \"done\": true},\n  {\"task\": \"README 정리\", \"done\": false}\n]\n# 복습 메모 1\n"
+    }
+  },
+  {
+    "date": "2025-05-27T01:29:30",
+    "message": "json 저장으로 변경",
+    "files": {
+      "projects/contacts.json": "[\n  {\"name\": \"민수\", \"phone\": \"010-1111-2222\"}\n]\n"
+    }
+  },
+  {
+    "date": "2025-06-01T00:58:02",
+    "message": "테스트하면서 고침",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n"
+    }
+  },
+  {
+    "date": "2025-06-01T19:20:59",
+    "message": "마지막 다듬기",
+    "files": {
+      "projects/weather_log.csv": "date,temp,rain\n2025-05-20,18.3,0\n2025-05-21,17.1,2.5\n2025-05-22,19.0,0\n2025-05-23,16.4,4.1\n2025-06-01,21.2,0\n2025-06-05,22.8,1.0\n2025-06-10,24.1,0\n"
+    }
+  },
+  {
+    "date": "2025-06-02T21:02:48",
+    "message": "todo 완료 표시 고침",
+    "files": {
+      "projects/weather_report.txt": "날씨 리포트\n============\n2025-05-20: 18.3도, 강수 0mm\n2025-05-21: 17.1도, 강수 2.5mm\n2025-05-22: 19.0도, 강수 0mm\n2025-05-23: 16.4도, 강수 4.1mm\n2025-06-01: 21.2도, 강수 0mm\n2025-06-05: 22.8도, 강수 1.0mm\n2025-06-10: 24.1도, 강수 0mm\n"
+    }
+  },
+  {
+    "date": "2025-06-02T22:15:05",
+    "message": "프로젝트 메모 업데이트",
+    "files": {
+      "projects/contacts.py": "contacts = []\n\ndef add_contact(name, phone):\n    contacts.append({'name': name, 'phone': phone})\n\ndef list_contacts():\n    for c in contacts:\n        print(c['name'], c['phone'])\n\nadd_contact('민수', '010-1111-2222')\nadd_contact('지영', '010-3333-4444')\nlist_contacts()\n"
+    }
+  },
+  {
+    "date": "2025-06-03T11:28:57",
+    "message": "중복 이름 업데이트 처리",
+    "files": {
+      "projects/contacts.json": "[\n  {\"name\": \"민수\", \"phone\": \"010-1111-2222\"},\n  {\"name\": \"지영\", \"phone\": \"010-3333-4444\"}\n]\n"
+    }
+  },
+  {
+    "date": "2025-06-04T22:23:59",
+    "message": "코드 정리하고 주석",
+    "files": {
+      "projects/contacts.py": "import json\nfrom pathlib import Path\n\nDATA = Path('projects/contacts.json')\n\ndef load():\n    if DATA.exists():\n        return json.loads(DATA.read_text(encoding='utf-8'))\n    return []\n\ndef save(contacts):\n    DATA.write_text(json.dumps(contacts, ensure_ascii=False, indent=2), encoding='utf-8')\n\ndef add_contact(name, phone):\n    contacts = load()\n    contacts.append({'name': name, 'phone': phone})\n    save(contacts)\n\ndef list_contacts():\n    for c in load():\n        print(f\"{c['name']}: {c['phone']}\")\n\nadd_contact('민수', '010-1111-2222')\nlist_contacts()\n"
+    }
+  },
+  {
+    "date": "2025-06-04T23:27:26",
+    "message": "json 저장으로 변경",
+    "files": {
+      "projects/contacts.py": "import json\nfrom pathlib import Path\n\nDATA = Path('projects/contacts.json')\n\ndef load():\n    if DATA.exists():\n        return json.loads(DATA.read_text(encoding='utf-8'))\n    return []\n\ndef save(contacts):\n    DATA.write_text(json.dumps(contacts, ensure_ascii=False, indent=2), encoding='utf-8')\n\ndef add_contact(name, phone):\n    contacts = load()\n    for c in contacts:\n        if c['name'] == name:\n            print('이미 있음, 번호 업데이트')\n            c['phone'] = phone\n            save(contacts)\n            return\n    contacts.append({'name': name, 'phone': phone})\n    save(contacts)\n\ndef find_contact(name):\n    for c in load():\n        if name in c['name']:\n            return c\n    return None\n\ndef list_contacts():\n    contacts = load()\n    if not contacts:\n        print('연락처 없음')\n        return\n    for c in contacts:\n        print(f\"{c['name']}: {c['phone']}\")\n\nif __name__ == '__main__':\n    add_contact('민수', '010-1111-2222')\n    add_contact('지영', '010-3333-4444')\n    list_contacts()\n    print('검색:', find_contact('민'))\n"
+    }
+  },
+  {
+    "date": "2025-06-05T21:19:28",
+    "message": "에러 처리 보강",
+    "files": {
+      "projects/todos.json": "[\n  {\"task\": \"미니프로젝트 마무리\", \"done\": true},\n  {\"task\": \"README 정리\", \"done\": false}\n]\n# 복습 메모 2\n"
+    }
+  },
+  {
+    "date": "2025-06-05T22:35:07",
+    "message": "테스트하면서 고침",
+    "files": {
+      "projects/todos.json": "[\n  {\"task\": \"미니프로젝트 마무리\", \"done\": true},\n  {\"task\": \"README 정리\", \"done\": false}\n]\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-06-05T23:56:30",
+    "message": "중복 이름 업데이트 처리",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-06-10T11:14:02",
+    "message": "테스트하면서 고침",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n# 복습 메모 5\n",
+      "projects/weather_log.csv": "date,temp,rain\n2025-05-20,18.3,0\n2025-05-21,17.1,2.5\n2025-05-22,19.0,0\n2025-05-23,16.4,4.1\n2025-06-01,21.2,0\n2025-06-05,22.8,1.0\n2025-06-10,24.1,0\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-06-10T12:56:04",
+    "message": "todo 완료 표시 고침",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n# 복습 메모 6\n"
+    }
+  },
+  {
+    "date": "2025-06-10T19:36:08",
+    "message": "기능 하나 더 넣음",
+    "files": {
+      "projects/todo.py": "import json\nfrom pathlib import Path\n\nDATA = Path('projects/todos.json')\n\ndef load():\n    if DATA.exists():\n        return json.loads(DATA.read_text(encoding='utf-8'))\n    return []\n\ndef save(items):\n    DATA.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding='utf-8')\n\ndef add(item):\n    items = load()\n    items.append({'task': item, 'done': False})\n    save(items)\n\ndef complete(index):\n    items = load()\n    items[index]['done'] = True\n    save(items)\n\ndef show():\n    for i, t in enumerate(load()):\n        mark = '[x]' if t['done'] else '[ ]'\n        print(i, mark, t['task'])\n\nif __name__ == '__main__':\n    add('미니프로젝트 마무리')\n    add('README 정리')\n    complete(0)\n    show()\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-06-12T19:01:47",
+    "message": "프로젝트 메모 업데이트",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n# 복습 메모 7\n"
+    }
+  },
+  {
+    "date": "2025-06-12T20:05:32",
+    "message": "미니프로젝트 버그수정",
+    "files": {
+      "projects/readme_notes.md": "# 미니 프로젝트 메모\n\n## 연락처 관리\n- json 저장\n- 검색 기능\n\n## 날씨 수집\n- csv 로그\n- 리포트 출력\n\n## 할일\n- todo 앱도 파일 저장으로 개선함\n# 복습 메모 2\n"
+    }
+  },
+  {
+    "date": "2025-06-13T22:12:07",
+    "message": "에러 처리 보강",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n# 복습 메모 8\n"
+    }
+  },
+  {
+    "date": "2025-06-13T23:11:33",
+    "message": "파일 경로 Path로 통일",
+    "files": {
+      "projects/todo.py": "import json\nfrom pathlib import Path\n\nDATA = Path('projects/todos.json')\n\ndef load():\n    if DATA.exists():\n        return json.loads(DATA.read_text(encoding='utf-8'))\n    return []\n\ndef save(items):\n    DATA.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding='utf-8')\n\ndef add(item):\n    items = load()\n    items.append({'task': item, 'done': False})\n    save(items)\n\ndef complete(index):\n    items = load()\n    items[index]['done'] = True\n    save(items)\n\ndef show():\n    for i, t in enumerate(load()):\n        mark = '[x]' if t['done'] else '[ ]'\n        print(i, mark, t['task'])\n\nif __name__ == '__main__':\n    add('미니프로젝트 마무리')\n    add('README 정리')\n    complete(0)\n    show()\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-06-13T23:53:32",
+    "message": "날씨 로그 요약 함수",
+    "files": {
+      "projects/weather_log.csv": "date,temp,rain\n2025-05-20,18.3,0\n2025-05-21,17.1,2.5\n2025-05-22,19.0,0\n2025-05-23,16.4,4.1\n2025-06-01,21.2,0\n2025-06-05,22.8,1.0\n2025-06-10,24.1,0\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-06-15T09:50:31",
+    "message": "미니프로젝트 버그수정",
+    "files": {
+      "projects/contacts.py": "import json\nfrom pathlib import Path\n\nDATA = Path('projects/contacts.json')\n\ndef load():\n    if DATA.exists():\n        return json.loads(DATA.read_text(encoding='utf-8'))\n    return []\n\ndef save(contacts):\n    DATA.write_text(json.dumps(contacts, ensure_ascii=False, indent=2), encoding='utf-8')\n\ndef add_contact(name, phone):\n    contacts = load()\n    for c in contacts:\n        if c['name'] == name:\n            print('이미 있음, 번호 업데이트')\n            c['phone'] = phone\n            save(contacts)\n            return\n    contacts.append({'name': name, 'phone': phone})\n    save(contacts)\n\ndef find_contact(name):\n    for c in load():\n        if name in c['name']:\n            return c\n    return None\n\ndef list_contacts():\n    contacts = load()\n    if not contacts:\n        print('연락처 없음')\n        return\n    for c in contacts:\n        print(f\"{c['name']}: {c['phone']}\")\n\nif __name__ == '__main__':\n    add_contact('민수', '010-1111-2222')\n    add_contact('지영', '010-3333-4444')\n    list_contacts()\n    print('검색:', find_contact('민'))\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-06-16T23:04:39",
+    "message": "프로젝트 메모 업데이트",
+    "files": {
+      "projects/contacts.json": "[\n  {\"name\": \"민수\", \"phone\": \"010-1111-2222\"},\n  {\"name\": \"지영\", \"phone\": \"010-3333-4444\"}\n]\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-06-17T17:13:49",
+    "message": "json 저장으로 변경",
+    "files": {
+      "projects/todos.json": "[\n  {\"task\": \"미니프로젝트 마무리\", \"done\": true},\n  {\"task\": \"README 정리\", \"done\": false}\n]\n# 복습 메모 4\n"
+    }
+  },
+  {
+    "date": "2025-06-17T21:41:04",
+    "message": "파일 경로 Path로 통일",
+    "files": {
+      "projects/readme_notes.md": "# 미니 프로젝트 메모\n\n## 연락처 관리\n- json 저장\n- 검색 기능\n\n## 날씨 수집\n- csv 로그\n- 리포트 출력\n\n## 할일\n- todo 앱도 파일 저장으로 개선함\n# 복습 메모 3\n"
+    }
+  },
+  {
+    "date": "2025-06-18T23:20:37",
+    "message": "중복 이름 업데이트 처리",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n# 복습 메모 9\n"
+    }
+  },
+  {
+    "date": "2025-06-19T19:53:07",
+    "message": "todo 완료 표시 고침",
+    "files": {
+      "projects/weather_collector.py": "import csv\nfrom pathlib import Path\n\nLOG = Path('projects/weather_log.csv')\n\ndef init_log():\n    if not LOG.exists():\n        with open(LOG, 'w', newline='', encoding='utf-8') as f:\n            csv.writer(f).writerow(['date', 'temp', 'rain'])\n\ndef save_temp(day, temp, rain=0.0):\n    init_log()\n    with open(LOG, 'a', newline='', encoding='utf-8') as f:\n        csv.writer(f).writerow([day, temp, rain])\n\ndef load_rows():\n    if not LOG.exists():\n        return []\n    with open(LOG, encoding='utf-8') as f:\n        return list(csv.DictReader(f))\n\ndef summary():\n    rows = load_rows()\n    if not rows:\n        print('데이터 없음')\n        return\n    temps = [float(r['temp']) for r in rows]\n    rainy = [r for r in rows if float(r['rain']) > 0]\n    print(f'{len(temps)}일 기록')\n    print(f'평균기온 {sum(temps)/len(temps):.1f}도')\n    print(f'비온 날 {len(rainy)}일')\n\ndef export_report():\n    rows = load_rows()\n    report = Path('projects/weather_report.txt')\n    lines = ['날씨 리포트', '=' * 12]\n    for r in rows:\n        lines.append(f\"{r['date']}: {r['temp']}도, 강수 {r['rain']}mm\")\n    report.write_text('\\n'.join(lines) + '\\n', encoding='utf-8')\n    print('리포트 작성:', report)\n\nif __name__ == '__main__':\n    summary()\n    export_report()\n# 복습 메모 10\n"
+    }
+  },
+  {
+    "date": "2025-06-20T15:22:33",
+    "message": "리포트 출력 추가",
+    "files": {
+      "projects/weather_report.txt": "날씨 리포트\n============\n2025-05-20: 18.3도, 강수 0mm\n2025-05-21: 17.1도, 강수 2.5mm\n2025-05-22: 19.0도, 강수 0mm\n2025-05-23: 16.4도, 강수 4.1mm\n2025-06-01: 21.2도, 강수 0mm\n2025-06-05: 22.8도, 강수 1.0mm\n2025-06-10: 24.1도, 강수 0mm\n# 복습 메모 2\n"
+    }
+  }
+]

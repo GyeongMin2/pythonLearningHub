@@ -1,0 +1,15 @@
+{
+  "name": "김학생",
+  "level": "beginner",
+  "hobbies": [
+    "coding",
+    "walking"
+  ],
+  "last_study": "json",
+  "courses": [
+    "basics",
+    "functions",
+    "oop"
+  ],
+  "github": "GyeongMin2/pythonLearningHub"
+}

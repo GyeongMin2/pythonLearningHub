@@ -8,219 +8,222 @@
   },
   {
     "date": "2024-12-15T00:31:17",
-    "message": "딕셔너리 예제 추가",
+    "message": "변수 연습해봄",
     "files": {
       "basics/variables.py": "# 변수와 기본 연산\na = 10\nb = 3.5\nc = 'hello'\nd = True\nprint(a, b, c, d)\nprint('합:', a + int(b))\n"
     }
   },
   {
     "date": "2024-12-18T22:22:19",
-    "message": "문자열 메서드 정리",
+    "message": "자료형 type 찍어보기",
     "files": {
       "basics/types.py": "# 자료형 확인\nsamples = [10, 3.14, '문자', [1, 2, 3], {'k': 1}]\nfor item in samples:\n    print(item, '->', type(item).__name__)\n"
     }
   },
   {
     "date": "2024-12-19T19:49:17",
-    "message": "간단한 계산기 만들어봄",
+    "message": "조건문 if 연습",
     "files": {
       "basics/if_else.py": "# if-elif-else 연습\nscore = 85\nif score >= 90:\n    grade = 'A'\nelif score >= 80:\n    grade = 'B'\nelif score >= 70:\n    grade = 'C'\nelse:\n    grade = 'F'\nprint('등급:', grade)\n"
     }
   },
   {
     "date": "2024-12-19T20:52:28",
-    "message": "숫자맞추기 게임 초안",
+    "message": "for문이랑 while 처음",
     "files": {
       "basics/loops.py": "# for / while 기본\nfor i in range(1, 6):\n    print('*' * i)\n\nn = 0\nwhile n < 3:\n    print('while', n)\n    n += 1\n"
     }
   },
   {
     "date": "2024-12-19T21:27:38",
-    "message": "반복문 처음 해봄",
+    "message": "리스트 처음 해봄",
     "files": {
       "basics/lists.py": "# 리스트 기본\nnums = [3, 1, 4, 1, 5, 9]\nprint('첫값', nums[0], '길이', len(nums))\nnums.append(2)\nprint('append', nums)\n"
     }
   },
   {
     "date": "2024-12-22T22:00:33",
-    "message": "오늘 기초문법 새로  orth",
+    "message": "문자열 메서드 연습",
     "files": {
       "basics/strings.py": "# 문자열 인덱싱/메서드\ns = '  Python Study  '\nprint(s.strip())\nprint(s.lower(), s.upper())\nprint(s.replace('Study', '공부'))\n"
     }
   },
   {
     "date": "2024-12-22T22:46:19",
-    "message": "문자열 메서드 정리",
+    "message": "딕셔너리 예제 추가",
     "files": {
       "basics/dict.py": "# 딕셔너리\nstudent = {'name': '철수', 'age': 20, 'major': '컴공'}\nstudent['grade'] = 'B'\nfor key, val in student.items():\n    print(key, '=>', val)\n"
     }
   },
   {
     "date": "2024-12-24T01:10:08",
-    "message": "숫자맞추기 게임 초안",
+    "message": "간단한 계산기 만들어봄",
     "files": {
       "basics/practice_calc.py": "# 간단 계산기\na, b = 10, 3\nprint('+, -, *, /', a + b, a - b, a * b, a / b)\n"
     }
   },
   {
     "date": "2024-12-25T22:35:53",
-    "message": "오늘 기초문법 새로  orth",
+    "message": "숫자맞추기 게임 초안",
     "files": {
-      "basics/number_guess.py": "# 숫자 맞추기 게임 (while + 시도 횟수)\nimport random\n\ndef play():\n    answer = random.randint(1, 100)\n    tries = 0\n    print('1~100 사이 숫자를 맞춰보세요')\n    while True:\n        raw = input('추측: ').strip()\n        try:\n            guess = int(raw)\n        except ValueError:\n            print('정수 입력')\n            continue\n        tries += 1\n        if guess < answer:\n            print('더 큼')\n        elif guess > answer:\n            print('더 작음')\n        else:\n            print(f'정답! {tries}번 만에 성공')\n            break\n\nif __name__ == '__main__':\n    play()\n"
+      "basics/number_guess.py": "# 숫자 맞추기 게임 (while + 시도 횟수)\nimport random\n\nanswer = random.randint(1, 100)\ntries = 0\nprint('1~100 사이 숫자를 맞춰보세요')\nwhile True:\n    raw = input('추측: ').strip()\n    try:\n        guess = int(raw)\n    except ValueError:\n        print('정수 입력')\n        continue\n    tries += 1\n    if guess < answer:\n        print('더 큼')\n    elif guess > answer:\n        print('더 작음')\n    else:\n        print(f'정답! {tries}번 만에 성공')\n        break\n"
     }
   },
   {
     "date": "2024-12-25T23:21:15",
-    "message": "복습하면서 리팩터",
+    "message": "딕셔너리 비슷한거 또 해봄",
     "files": {
-      "basics/dict.py": "# 단어 빈도 (수동)\nwords = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']\nfreq: dict[str, int] = {}\nfor w in words:\n    freq[w] = freq.get(w, 0) + 1\nprint(freq)\n"
+      "basics/dict.py": "# 딕셔너리 다시 연습 — 어제꺼랑 비슷한데 키만 바꿈\nperson = {'name': '영희', 'age': 21, 'major': '통계'}\nperson['grade'] = 'A'\nperson['city'] = '서울'\nfor k, v in person.items():\n    print(k, ':', v)\n"
     }
   },
   {
     "date": "2024-12-26T01:24:05",
-    "message": "오타 고침",
+    "message": "for문 다시 연습",
     "files": {
-      "basics/loops.py": "# 구구단 2~9\nfor i in range(2, 10):\n    for j in range(1, 10):\n        print(f'{i}x{j}={i*j}', end='  ')\n    print()\n"
+      "basics/loops.py": "# for / while 다시 연습 — range만 바꿈\nfor i in range(1, 8):\n    print('#' * i)\n\nn = 0\nwhile n < 5:\n    print('카운트', n)\n    n += 1\n"
     }
   },
   {
     "date": "2024-12-26T19:52:48",
-    "message": "버그 수정 (연산 부분)",
+    "message": "조건문 비슷한거 또 해봄",
     "files": {
-      "basics/if_else.py": "# 성적 판정 (입력)\nraw = input('점수 입력: ').strip()\ntry:\n    score = int(raw)\nexcept ValueError:\n    print('숫자로 입력해주세요')\n    score = 0\nif score >= 90:\n    grade = 'A'\nelif score >= 80:\n    grade = 'B'\nelif score >= 70:\n    grade = 'C'\nelif score >= 60:\n    grade = 'D'\nelse:\n    grade = 'F'\nprint(f'점수 {score} -> {grade}')\n"
+      "basics/if_else.py": "# if 다시 연습 — 점수랑 기준만 살짝 바꿈\nscore = 72\nif score >= 90:\n    grade = 'A'\nelif score >= 80:\n    grade = 'B'\nelif score >= 70:\n    grade = 'C'\nelif score >= 60:\n    grade = 'D'\nelse:\n    grade = 'F'\nprint('이번 점수 등급:', grade)\n"
     }
   },
   {
     "date": "2024-12-27T09:01:02",
-    "message": "숫자맞추기 while로 변경",
+    "message": "조건문 변수명만 바꿔서 복습",
     "files": {
-      "basics/if_else.py": "# 성적 판정 (입력)\nraw = input('점수 입력: ').strip()\ntry:\n    score = int(raw)\nexcept ValueError:\n    print('숫자로 입력해주세요')\n    score = 0\nif score >= 90:\n    grade = 'A'\nelif score >= 80:\n    grade = 'B'\nelif score >= 70:\n    grade = 'C'\nelif score >= 60:\n    grade = 'D'\nelse:\n    grade = 'F'\nprint(f'점수 {score} -> {grade}')\n\ndef letter_grade(point: int) -> str:\n    if point >= 90:\n        return 'A'\n    if point >= 80:\n        return 'B'\n    if point >= 70:\n        return 'C'\n    if point >= 60:\n        return 'D'\n    return 'F'\n\nprint('함수 테스트', letter_grade(88))\n"
+      "basics/if_else.py": "# 어제꺼랑 비슷한데 변수명이랑 출력만 바꿈\npoint = 91\nif point >= 90:\n    result = 'A'\nelif point >= 80:\n    result = 'B'\nelif point >= 70:\n    result = 'C'\nelif point >= 60:\n    result = 'D'\nelse:\n    result = 'F'\nprint(f'{point}점이면 {result}')\nif point >= 90:\n    print('잘했어!')\n",
+      "basics/if_practice2.py": "# 조건문 연습 2 — if_else랑 거의 같은 구조\ntemp = 18\nif temp >= 30:\n    weather = '더움'\nelif temp >= 20:\n    weather = '따뜻'\nelif temp >= 10:\n    weather = '쌀쌀'\nelse:\n    weather = '추움'\nprint('날씨:', weather)\n"
     }
   },
   {
     "date": "2024-12-27T10:19:11",
-    "message": "버그 수정 (연산 부분)",
+    "message": "딕셔너리 for문 돌리기 복습",
     "files": {
-      "basics/dict.py": "# Counter 사용\nfrom collections import Counter\n\nwords = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']\ncounts = Counter(words)\nprint(counts)\nprint('most common', counts.most_common(2))\n"
+      "basics/dict.py": "# 딕셔너리 또 연습 — items() 출력 문구만 바꿈\nbook = {'title': '파이썬', 'pages': 300, 'author': '김'}\nbook['year'] = 2024\nfor key, val in book.items():\n    print(f'{key} = {val}')\nprint('키 개수', len(book))\n"
     }
   },
   {
     "date": "2024-12-29T19:57:48",
-    "message": "출력 포맷 수정",
+    "message": "변수 다시 연습 (이름만 바꿈)",
     "files": {
-      "basics/variables.py": "# 변수와 기본 연산\na = 10\nb = 3.5\nc = 'hello'\nd = True\nprint(a, b, c, d)\nprint('합:', a + int(b))\n\nprint(type(a), type(b), type(c), type(d))\npi = 3.14159\nprint('pi 반올림', round(pi, 2))\n"
+      "basics/variables.py": "# 변수 다시 연습 — 값만 바꿈\nx = 20\ny = 2.5\nmsg = 'hi'\nok = False\nprint(x, y, msg, ok)\nprint('곱:', x * int(y))\nprint(type(x), type(y))\n"
     }
   },
   {
     "date": "2024-12-29T21:39:03",
-    "message": "복습하면서 리팩터",
+    "message": "변수 출력 문구만 바꿔봄",
     "files": {
-      "basics/variables.py": "# 변수와 기본 연산\na = 10\nb = 3.5\nc = 'hello'\nd = True\nprint(a, b, c, d)\nprint('합:', a + int(b))\n\nprint(type(a), type(b), type(c), type(d))\npi = 3.14159\nprint('pi 반올림', round(pi, 2))\n\n# 변수 교환\nx, y = 5, 10\nx, y = y, x\nprint('swap', x, y)\nprint('곱', x * y)\n"
+      "basics/variables.py": "# 어제꺼랑 비슷한데 출력만 바꿈\nx = 20\ny = 2.5\nmsg = 'hi'\nok = True\nprint('값들:', x, y, msg, ok)\nprint('합계 =', x + int(y))\nprint(type(x), type(y))\n# 교환도 한 번 더\nx, y = y, x\nprint('swap 후', x, y)\n"
     }
   },
   {
     "date": "2024-12-30T22:16:48",
-    "message": "입력받도록 개선",
+    "message": "반복문 break 조건만 바꿔서 연습",
     "files": {
-      "basics/loops.py": "# 구구단 2~9\nfor i in range(2, 10):\n    for j in range(1, 10):\n        print(f'{i}x{j}={i*j}', end='  ')\n    print()\n\n# break / continue\ntotal = 0\nfor i in range(1, 101):\n    if i % 2 == 0:\n        continue\n    total += i\n    if total > 500:\n        break\nprint('홀수 합(제한):', total)\n"
+      "basics/loops.py": "# for 다시 연습 — range랑 break 조건만 바꿈\nfor i in range(1, 6):\n    print('*' * i)\n\nn = 0\nwhile n < 10:\n    print('while', n)\n    n += 1\n    if n >= 4:\n        break\n"
     }
   },
   {
     "date": "2024-12-30T23:17:38",
-    "message": "딕셔너리 버전 개선",
+    "message": "문자열 메서드 비슷한거 또",
     "files": {
-      "basics/strings.py": "# 문자열 인덱싱/메서드\ns = '  Python Study  '\nprint(s.strip())\nprint(s.lower(), s.upper())\nprint(s.replace('Study', '공부'))\n\ntext = '  hello world  '\nprint(text.strip())\nprint('split', 'a,b,c'.split(','))\nprint('join', '-'.join(['a', 'b', 'c']))\n"
+      "basics/strings.py": "# 문자열 다시 연습 — 샘플 문장만 바꿈\ns = '  Hello Python  '\nprint(s.strip())\nprint(s.lower(), s.upper())\nprint(s.replace('Python', '파이썬'))\nprint('길이', len(s.strip()))\n"
     }
   },
   {
     "date": "2024-12-31T01:06:31",
-    "message": "주석 달아둠",
+    "message": "for문 복습용으로 한번 더",
     "files": {
-      "basics/loops.py": "# 구구단 2~9\nfor i in range(2, 10):\n    for j in range(1, 10):\n        print(f'{i}x{j}={i*j}', end='  ')\n    print()\n\n# break / continue\ntotal = 0\nfor i in range(1, 101):\n    if i % 2 == 0:\n        continue\n    total += i\n    if total > 500:\n        break\nprint('홀수 합(제한):', total)\n"
+      "basics/loops.py": "# for / while 복습 — 주석만 달아둠\nfor i in range(1, 6):\n    print('*' * i)\n\nn = 0\nwhile n < 10:\n    print('while', n)\n    n += 1\n    if n >= 4:  # 4에서 끊기\n        break\n",
+      "basics/loops_retry.py": "# 루프 재연습 — loops.py랑 거의 같음, range만 다름\nfor i in range(3, 0, -1):\n    print('카운트다운', i)\n\ncnt = 1\nwhile cnt <= 3:\n    print('반복', cnt)\n    cnt += 1\n"
     }
   },
   {
     "date": "2025-01-01T00:30:17",
-    "message": "계산기에 예외처리",
+    "message": "딕셔너리 get 연습해봄",
     "files": {
-      "basics/dict.py": "# Counter 사용\nfrom collections import Counter\n\nwords = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']\ncounts = Counter(words)\nprint(counts)\nprint('most common', counts.most_common(2))\n\ndef top_word(items: list[str]) -> str:\n    c = Counter(items)\n    return c.most_common(1)[0][0]\n\nprint('top', top_word(words))\n"
+      "basics/dict.py": "# 딕셔너리 또 손봄 — get이랑 기본값만 추가\nbook = {'title': '파이썬', 'pages': 300, 'author': '김'}\nbook['year'] = 2024\nfor key, val in book.items():\n    print(f'{key} = {val}')\nprint('키 개수', len(book))\nprint('가격?', book.get('price', '없음'))\n"
     }
   },
   {
     "date": "2025-01-05T20:14:24",
-    "message": "버그 수정 (연산 부분)",
+    "message": "계산기 비슷한거 조건만 바꿔봄",
     "files": {
-      "basics/practice_calc.py": "# 입력 계산기\na = float(input('첫 번째 수: '))\nb = float(input('두 번째 수: '))\nop = input('연산 (+,-,*,/): ').strip()\nif op == '+':\n    print(a + b)\nelif op == '-':\n    print(a - b)\nelif op == '*':\n    print(a * b)\nelif op == '/':\n    print(a / b)\nelse:\n    print('모르는 연산자')\n"
+      "basics/practice_calc.py": "# 계산기 다시 연습 — 숫자랑 연산만 바꿈\na, b = 15, 4\nop = '*'\nif op == '+':\n    print(a + b)\nelif op == '-':\n    print(a - b)\nelif op == '*':\n    print(a * b)\nelif op == '/':\n    print(a / b)\nelse:\n    print('모르는 연산')\n"
     }
   },
   {
     "date": "2025-01-06T22:21:34",
-    "message": "좀 더 파이썬답게 수정",
+    "message": "리스트 append 다시 연습",
     "files": {
-      "basics/lists.py": "# 리스트 기본\nnums = [3, 1, 4, 1, 5, 9]\nprint('첫값', nums[0], '길이', len(nums))\nnums.append(2)\nprint('append', nums)\n\nnums.sort()\nprint('정렬', nums)\nprint('1 개수', nums.count(1))\n"
+      "basics/lists.py": "# 리스트 다시 연습 — 숫자만 바꿈\nnums = [10, 20, 5, 7]\nprint('첫값', nums[0], '길이', len(nums))\nnums.append(3)\nprint('append 후', nums)\nnums.sort()\nprint('정렬', nums)\n"
     }
   },
   {
     "date": "2025-01-06T23:30:44",
-    "message": "복습하면서 리팩터",
+    "message": "hello 출력 문구만 바꿔서 복습",
     "files": {
-      "basics/hello.py": "# 파이썬 첫 출력 — 6개월 공부 시작\nname = '학생'\ngoal = '기초부터 차근차근'\nprint('Hello', name)\nprint('목표:', goal)\n\ndef greet(who: str) -> None:\n    print(f'안녕, {who}!')\n\ngreet(name)\n"
+      "basics/hello.py": "# 첫 출력 다시 연습 — 변수명이랑 문구만 바꿈\nuser = '민수'\ngoal = '매일 조금이라도'\nprint('안녕', user)\nprint('오늘 목표:', goal)\n"
     }
   },
   {
     "date": "2025-01-07T22:00:22",
-    "message": "좀 더 파이썬답게 수정",
+    "message": "자료형 비슷한 예제 또 해봄",
     "files": {
-      "basics/types.py": "# 자료형 확인\nsamples = [10, 3.14, '문자', [1, 2, 3], {'k': 1}]\nfor item in samples:\n    print(item, '->', type(item).__name__)\n\nn = '123'\nprint('int 변환', int(n) + 7)\nprint('str 붙이기', str(100) + '점')\nprint('float', float('3.14'))\n"
+      "basics/types.py": "# 자료형 다시 연습 — 샘플만 바꿈\nsamples = [0, 2.5, '글자', (1, 2), {'a': 1}]\nfor item in samples:\n    print(item, '타입:', type(item).__name__)\nprint('변환', int('42') + 1)\n"
     }
   },
   {
     "date": "2025-01-09T10:34:47",
-    "message": "숫자맞추기 while로 변경",
+    "message": "계산기/숫자맞추기 비슷한거 조건만 바꿔봄",
     "files": {
-      "basics/practice_calc.py": "# 계산기 + 0 나누기 처리\ndef calc(x: float, y: float, op: str):\n    if op == '+':\n        return x + y\n    if op == '-':\n        return x - y\n    if op == '*':\n        return x * y\n    if op == '/':\n        if y == 0:\n            raise ZeroDivisionError('0으로 나눌 수 없음')\n        return x / y\n    raise ValueError('연산자 오류')\n\nif __name__ == '__main__':\n    a = float(input('첫 번째 수: '))\n    b = float(input('두 번째 수: '))\n    op = input('연산: ').strip()\n    try:\n        print('결과', calc(a, b, op))\n    except (ValueError, ZeroDivisionError) as e:\n        print('에러', e)\n"
+      "basics/practice_calc.py": "# 계산기 복습 — 나누기 0만 체크 추가\na, b = 15, 0\nop = '/'\nif op == '+':\n    print(a + b)\nelif op == '-':\n    print(a - b)\nelif op == '*':\n    print(a * b)\nelif op == '/':\n    if b == 0:\n        print('0으로 못 나눔')\n    else:\n        print(a / b)\nelse:\n    print('모르는 연산')\n",
+      "basics/number_guess.py": "# 숫자맞추기 다시 연습 — 범위랑 문구만 바꿈\nimport random\n\nanswer = random.randint(1, 50)  # 어제꺼랑 비슷한데 범위만 줄임\ntries = 0\nprint('1~50 맞춰보기')\nwhile True:\n    raw = input('숫자: ').strip()\n    try:\n        guess = int(raw)\n    except ValueError:\n        print('정수만')\n        continue\n    tries += 1\n    if guess < answer:\n        print('업')\n    elif guess > answer:\n        print('다운')\n    else:\n        print(f'맞춤! {tries}회')\n        break\n"
     }
   },
   {
     "date": "2025-01-11T10:14:17",
-    "message": "리스트 예제 보강",
+    "message": "리스트 count 한 줄 더 연습",
     "files": {
-      "basics/lists.py": "# 리스트 기본\nnums = [3, 1, 4, 1, 5, 9]\nprint('첫값', nums[0], '길이', len(nums))\nnums.append(2)\nprint('append', nums)\n\nnums.sort()\nprint('정렬', nums)\nprint('1 개수', nums.count(1))\n\nsquares = [i * i for i in range(1, 11)]\nevens = [i for i in range(20) if i % 2 == 0]\nprint('squares', squares[:5], '...')\nprint('evens', evens[:8], '...')\n"
+      "basics/lists.py": "# 리스트 또 손봄 — count만 추가\nnums = [10, 20, 5, 7, 10]\nprint('첫값', nums[0], '길이', len(nums))\nnums.append(3)\nprint('append 후', nums)\nnums.sort()\nprint('정렬', nums)\nprint('10 개수', nums.count(10))\n"
     }
   },
   {
     "date": "2025-01-13T22:46:10",
-    "message": "숫자맞추기 while로 변경",
+    "message": "문자열 split 비슷한거 연습",
     "files": {
-      "basics/strings.py": "# 문자열 인덱싱/메서드\ns = '  Python Study  '\nprint(s.strip())\nprint(s.lower(), s.upper())\nprint(s.replace('Study', '공부'))\n\ntext = '  hello world  '\nprint(text.strip())\nprint('split', 'a,b,c'.split(','))\nprint('join', '-'.join(['a', 'b', 'c']))\n\nname, age = '민수', 20\nprint(f'{name}은 {age}살')\nprint('{:.2f}'.format(3.14159))\n"
+      "basics/strings.py": "# 문자열 또 연습 — split/join만 살짝\ns = '  Hello Python  '\nprint(s.strip())\nprint(s.lower(), s.upper())\nprint(s.replace('Python', '파이썬'))\nparts = 'a,b,c'.split(',')\nprint('split', parts)\nprint('join', '-'.join(parts))\n"
     }
   },
   {
     "date": "2025-01-13T23:49:34",
-    "message": "반복문 break 추가",
+    "message": "형변환 예외만 추가해서 복습",
     "files": {
-      "basics/types.py": "# 자료형 확인\nsamples = [10, 3.14, '문자', [1, 2, 3], {'k': 1}]\nfor item in samples:\n    print(item, '->', type(item).__name__)\n\nn = '123'\nprint('int 변환', int(n) + 7)\nprint('str 붙이기', str(100) + '점')\nprint('float', float('3.14'))\n\ntext = '42'\ntry:\n    num = int(text)\n    print('정수 OK', num)\nexcept ValueError as err:\n    print('변환 실패', err)\n"
+      "basics/types.py": "# 자료형 복습 — try 변환만 추가\nsamples = [0, 2.5, '글자', (1, 2), {'a': 1}]\nfor item in samples:\n    print(item, '타입:', type(item).__name__)\ntext = '42'\ntry:\n    print('정수 OK', int(text))\nexcept ValueError:\n    print('변환 실패')\n"
     }
   },
   {
     "date": "2025-01-14T22:01:39",
-    "message": "딕셔너리 버전 개선",
+    "message": "hello에 print 한 줄 더 해봄",
     "files": {
-      "basics/hello.py": "# 파이썬 첫 출력 — 6개월 공부 시작\nname = '학생'\ngoal = '기초부터 차근차근'\nprint('Hello', name)\nprint('목표:', goal)\n\ndef greet(who: str) -> None:\n    print(f'안녕, {who}!')\n\ngreet(name)\n\nif __name__ == '__main__':\n    # 디버깅용\n    print('메인에서 실행')\n    greet('파이썬')\n"
+      "basics/hello.py": "# hello 또 연습 — print 한 줄만 추가\nuser = '민수'\ngoal = '매일 조금이라도'\nprint('안녕', user)\nprint('오늘 목표:', goal)\nprint('파이팅!')\n"
     }
   },
   {
     "date": "2025-01-14T23:16:51",
-    "message": "주석 달아둠",
+    "message": "변수 주석 달면서 한번 더",
     "files": {
-      "basics/variables.py": "# 변수와 기본 연산\na = 10\nb = 3.5\nc = 'hello'\nd = True\nprint(a, b, c, d)\nprint('합:', a + int(b))\n\nprint(type(a), type(b), type(c), type(d))\npi = 3.14159\nprint('pi 반올림', round(pi, 2))\n\n# 변수 교환\nx, y = 5, 10\nx, y = y, x\nprint('swap', x, y)\nprint('곱', x * y)\n\ndef swap(a_val, b_val):\n    return b_val, a_val\n\nm, n = 1, 2\nm, n = swap(m, n)\nprint('함수 swap', m, n)\n"
+      "basics/variables.py": "# 변수 복습 메모\nx = 20\ny = 2.5\nmsg = 'hi'\nok = True\nprint('값들:', x, y, msg, ok)\nprint('합계 =', x + int(y))\nprint(type(x), type(y))\n# 교환도 한 번 더\nx, y = y, x\nprint('swap 후', x, y)\nprint('끝')\n"
     }
   },
   {
     "date": "2025-01-14T23:53:43",
-    "message": "복습하면서 리팩터",
+    "message": "기초 마지막 복습 (hello)",
     "files": {
-      "basics/hello.py": "# 파이썬 첫 출력 — 6개월 공부 시작\nname = '학생'\ngoal = '기초부터 차근차근'\nprint('Hello', name)\nprint('목표:', goal)\n\ndef greet(who: str) -> None:\n    print(f'안녕, {who}!')\n\ngreet(name)\n\nif __name__ == '__main__':\n    # 디버깅용\n    print('메인에서 실행')\n    greet('파이썬')\n\nnotes = ['변수', '출력', '함수']\nfor i, topic in enumerate(notes, 1):\n    print(i, topic)\n"
+      "basics/hello.py": "# 기초 마무리 복습 — 이름만 바꿈\nuser = '학생'\ngoal = '다음엔 함수'\nprint('안녕', user)\nprint('오늘 목표:', goal)\nprint('파이팅!')\nprint('basics 끝')\n"
     }
   },
   {
